@@ -1,0 +1,493 @@
+.App{
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+a{
+  text-decoration: none!important;
+  color: #b2a879;
+}
+a:hover{
+  color: #fff!important;
+}
+.minH{
+  min-height: 500px;
+}
+.maxH{
+  max-height: 400px;
+}
+.minH4{
+  min-height: 360px;
+}
+.minH15{
+  min-height: 15vh;
+}
+/*menu*/
+.menu,.menuMovil{
+  position: absolute;
+  width: 35%;
+  top: 0;
+  right: 5%;
+  z-index: 153;
+}
+.menuMovil{
+  right: 0%;
+}
+.linksMenu,#linksMenuHover{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  padding-top: 12vh;
+  text-align: left;
+  background: linear-gradient(to right, rgba(0,0,0,.9) 0%,rgba(0,0,0,.9) 25%);
+  z-index: 10;
+}
+#linksMenuHover{
+  background: linear-gradient(to right, rgba(0,0,0,.02) 0%,rgba(0,0,0,.9) 25%);
+  width:0%;
+  transition: all .3s linear;
+}
+.bgBeige{
+  background-image: none; 
+  background-color: #d6cd9c;
+}
+.btnClose{
+  position: absolute;
+  right: 5%;
+}
+/*text*/
+.textCenter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.tShadow{
+  text-shadow: 0px 0px 5px #000 ;
+}
+@font-face {
+  font-family: especial;
+  src: url("../font/airstrikecond.ttf");
+}
+.textEspecial{
+  font-family: especial;
+}
+.textNormal{
+  font-family: 'Roboto', sans-serif;
+}
+/*colores*/
+.bgBlack{
+  background-color: #000;
+}
+.degBlackPurple{
+  background: linear-gradient(to right, #000000 0%,#3e002f 50%,#000000 100%)
+}
+.purple{
+  background-color: #1c0015;
+}
+.purpleOp{
+  background-color: rgba(28, 0, 21,.8);
+}
+.promoPurple{
+  background-color: #23001a;
+}
+.goldTitle{
+  color: #8e834d!important;
+}
+.goldText{
+  color: #b2a879!important;
+}
+.goldTextLight{
+  color:#ffde8f;;
+}
+
+.bgBeigeDark{
+  background-color: #52491e;
+}
+.darkGrey{
+  background-color: #151315;
+}
+.gregBlack{
+  background: linear-gradient(135deg, #151315 0%,#3c3c3c 50%,#000000 100%);
+}
+.gregBlack:hover{
+  background: linear-gradient(135deg, #3c3c3c 0%,#000 50%,#3c3c3c 100%);
+}
+.bgGold{
+  background: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%);
+}
+.bgGold:hover{
+  background: linear-gradient(135deg, #dbd5a5 2%,#a0996f 17%,#a0996f 27%,#635c43 46%,#bfba8f 65%,#a0996f 81%,#dbd5a5 100%);
+  color: #fff!important;
+}
+.blue{
+  background-color: #080023;
+}
+.inputTextGold::placeholder { color: #b2a879}
+/*span*/
+.spanGold{
+  background: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%);
+  width:100%;
+  height: 8px;
+}
+.spanGoldBorderBlack{
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(135deg, #000 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#000 100%);
+}
+/*nav*/
+.logoRedondo{
+  position: absolute;
+  top: 2px;
+  left: 45%;
+  z-index: 1003;
+}
+.logoRedondoXS{
+  max-height: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .logoRedondoXS{
+    max-height: 75px;
+  }
+}
+.navBarSite{
+  min-height: 15vh;
+  /*height: 131px;*/
+}
+.payImg{
+  max-height:70px;
+}
+/*HOME*/
+.carousel-item img{/*se modifica bootstrap*/
+  height: 70vh;
+  width: 100%;
+}
+.imgSliderCel{
+  height: 24vh!important;
+  width: 100%;
+} 
+.textSliderMovil{
+  top: 55%;
+}
+.textSliderMovil5{
+  top:33%
+}
+.bgBTChome{
+  background-image: url("../img/bitcoinHome.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+.bgSportHome,.bgCasinoHome,.bgOnLineCasinoHome,.bgLiveBetHome,.bgHorseHome,.bgCallCenterHome{
+  background-image: url("../img/servicesHome/Sportbook-software.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 370px;
+  position: relative;
+  transition: all .2s linear;
+}
+.bgSportHome:hover,.bgCasinoHome:hover,.bgOnLineCasinoHome:hover,.bgLiveBetHome:hover,.bgHorseHome:hover,.bgCallCenterHome:hover{
+  background-size: 110% 110%;
+}
+.bgCasinoHome{
+  background-image: url("../img/servicesHome/live-casino.webp");
+}
+.bgOnLineCasinoHome{
+  background-image: url("../img/servicesHome/online-casino.jpg");
+}
+.bgLiveBetHome{
+  background-image: url("../img/servicesHome/live-betting.jpg");
+}
+.bgHorseHome{
+  background-image: url("../img/servicesHome/horses.jpg");
+}
+.bgCallCenterHome{
+  background-image: url("../img/servicesHome/call-center.jpg");
+}
+.textOffer{
+  position: absolute;
+  bottom: 2%;
+}
+.bgPurpleBLHome{
+  background-image: url("../img/bgHomePurpleBlack.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 370px;
+  position: relative;
+}
+
+/*SLIDER*/
+.titleSlider,.titleSliderBene{
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  font-size: 8vh;
+  color: #fff;
+  text-shadow: 0px 0px 5px  #000;
+}
+.sliderAbout,.sliderBeneficios,.sliderBettingSoftware,.sliderSoftwareFeatures,.sliderProducts,.sliderFaqs,.sliderPromos,.sliderBlog,.sliderContact,.sliderError{
+  width: 100%;
+  height: 70vh;
+  background-image: url("../img/sliderIndex.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .sliderAbout,.sliderBeneficios,.sliderBettingSoftware,.sliderSoftwareFeatures,.sliderProducts,.sliderFaqs,.sliderPromos,.sliderBlog,.sliderContact,.sliderError{
+    height: 27vh;
+  }
+  .titleSliderBene{
+    font-size: 5vh;
+  }
+}
+.sliderBeneficios{
+  background-image: url("../img/beneffitsOne.jpg");
+}
+.sliderBettingSoftware{
+  background-image: url("../img/betting-software.jpg");
+}
+.sliderSoftwareFeatures{
+  background-image: url("../img/software-features.jpg");
+}
+.sliderProducts{
+  background-image: url("../img/products.jpg");
+}
+.sliderBlog{
+  background-image: url("../img/Blog.jpg");
+}
+.sliderContact{
+  background-image: url("../img/contact.jpg");
+}
+.sliderFaqs,.sliderError{
+  background-image: none;
+  background-color: #000;
+}
+.sliderPromos{
+  background-image: url("../img/promos.jpg");
+}
+
+.titleSlider1{
+  left: -30%;
+  bottom: 20%;
+}
+.titleSlider2{
+  color: #ffde8f;
+  width: 100%;
+  left: 0%;
+  bottom: 15%;
+}
+.titleSlider3{
+  color: #ffde8f;
+  width: 100%;
+  left: -20%;
+  bottom: 5%;
+}
+.titleSlider4{
+  bottom:5%;
+  left: 30%;
+}
+.titleSlider5{
+  width: 100%;
+  left: 0;
+  color: #ffde8f;
+  bottom:10%;
+}
+.titleSlider2Text1,.titleSlider3Text1,.titleSlider4Text2,.titleSlider4Text1{
+  font-size: 8vh!important;
+}
+.titleSlider2Text2{
+  font-size: 13vh!important;
+}
+.titleSlider2Text3,.titleSlider3Text2{
+  font-size: 5vh!important;
+}
+.titleSlider4Text3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+}
+.titleSlider4Text4{
+  font-size: 4vh;
+}
+.titleSlider5Text3{
+  font-size: 3vh;
+}
+.titleSlider5Text2{
+  font-size: 18vh;
+}
+.titleSlider5Text4{
+  line-height: 1;
+  font-size: 7vh;
+}
+.titleSliderBene{
+  color: #ffde8f;
+  left: 0%;
+}
+.sliderError{
+  width: 100%;
+  height: 100vh;
+}
+.titleError{
+  font-size: 30vh;
+}
+/*beneficios*/
+.bgLoyalty,.bgStudy{
+  background-image: url("../img/Bennefits1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:300px ;
+} 
+.imgDisplay{
+  width: 50vw;
+}
+@media  screen and (min-width: 1400px) {
+  .imgAP{
+    transition: all .5s ease-out;
+
+  }
+  .imgAP:hover{
+    transform: scale(2);
+    border: 2px outset #b2a879;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #b2a879;
+  }
+}
+#myTab li .active{
+ border-bottom:2px solid #b2a879
+}
+#agentsPlayers li .active{
+  border-bottom:2px solid #b2a879
+ }
+.bgStudy{
+  background-image: url("../img/Bennefits3.jpg");
+}
+.promoBenefits{
+  background-image: url("../img/Bennefits2.1.jpg");
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 230px;
+  position: relative;
+}
+.promoSpanBenefits{
+  padding: 15px;
+  position: absolute;
+  left: 80vh;
+  top:1vh;
+}
+/*blog*/
+.imgpost{
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.bodyPost{
+  border-top: 1px solid #746d45;
+  border-bottom: 1px solid #746d45;
+}
+/*software*/
+.borderGold{
+  border: 2px solid transparent; 
+  border-image: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%) 1 10;
+  min-height: 140px;
+  transition: all .2s linear;
+}
+.borderGold:hover{
+  color:#fff!important;
+  border:2px solid #fff;
+  box-shadow: 0 0 5px rgba(255,255,255,.5);
+  transform: translateY(-5px);
+}
+.imgIconSoft{
+  height: 70px;
+}
+.bgSoftware,.bgLiveBetting,.bgMovileBetting,.bgHorses,.bgOnlineCasino,.bgLiveCasino,.bgPolls,.bgSquares{
+  background-image: url("../img/softwarebetting/software-screens.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 400px;
+}
+.bgLiveBetting{
+  background-image: url("../img/softwarebetting/Live\ Betting\ Offering.JPG");
+}
+.bgMovileBetting{
+  background-image: url("../img/softwarebetting/movileBetting.png");
+}
+.bgHorses{
+  background-image: url("../img/softwarebetting/horses.jpg");
+}
+.bgOnlineCasino{
+background-image: url("../img/softwarebetting/poker.JPG");
+}
+.bgLiveCasino{
+  background-image: url("../img/softwarebetting/LiveCasinoOffering.jpg");
+} 
+.bgSF{
+  background-image: url("../img/software-featuresBG.jpg.png");
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: 100% 470px;
+}
+/*faqs*/
+.btnFaqs{
+  background-color:#bfba8f;
+  color: #000;
+  border-radius: 0%!important;
+  padding: 5px;
+}
+.collapseFaqs{
+  background-color: #151315!important;
+  border-radius: 0%!important;
+  color: #fff;
+}
+/*sitemap*/
+.borderRight{
+  border-right: 4px solid #000;
+}
+/*blog*/
+.borderB{
+  border-bottom: 2px solid #3c3c3c;
+}
+.borderBottomGold{
+  border-bottom: 2px solid #a0996f;
+}
+/*blogPost*/
+.line{
+  height: 2px;
+  background-color: #a0996f;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+}
+/*error*/
+.subTitleError{
+  position: absolute;
+  top: 25%;
+  text-shadow: 0 0 5px #000;
+}
+/*btnup*/
+.btnUP{
+  position: fixed;
+  bottom: 15vh;
+  right: 3vh;
+  box-shadow: 0 0 10px #000;
+  color: #52491e;
+  width:50px;
+  height:50px;
+  padding:5px;
+  border-radius:50px;
+}
+/*footer*/
+.borderRW{
+  border-right: 1px solid #383215;
+}
+/*roy*/
