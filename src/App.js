@@ -13,6 +13,7 @@ import { Contact } from "./paginas/contact";
 import { Faqs } from "./paginas/faqs";
 import { Sitemap } from "./paginas/siteMap";
 import { Joinus } from "./paginas/joinus";
+import { Glossary } from "./paginas/glossary";
 import { Error } from "./paginas/404";
 
 /*components*/
@@ -58,6 +59,9 @@ function App() {
 						</Route>
 						<Route exact path="/joinus">
 							<Joinus />
+						</Route>
+						<Route exact path="/glossary">
+							<Glossary />
 						</Route>
 						<Route exact path="/siteMap">
 							<Sitemap />

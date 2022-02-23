@@ -87,7 +87,7 @@ export const Contact = () => {
 		<div className="container-fluid p-0">
 			<Helmet>
 				<title>Contact VIP Per Head </title>
-				<link rel="canonical" href="https://www.vipperhead.ag/contact/" />
+				<link rel="canonical" href="https://www.vipperhead.ag/contact" />
 				<meta name="description" content="Have any questions, suggestions or need to contact us? Click here and leave us a message, chat, email or call us. We would love to hear from you. VIP Per Head, best."></meta>
 			</Helmet>
 			<MenuDesplegable />

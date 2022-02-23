@@ -16,7 +16,7 @@ export const About = () => {
 		<div className="container-fluid p-0">
 			<Helmet>
 				<title>About VIP Per Head - Offshore Pay per Head Services and Software for Bookies</title>
-				<link rel="canonical" href="https://www.vipperhead.ag/about/" />
+				<link rel="canonical" href="https://www.vipperhead.ag/about-us" />
 				<meta name="description" content="Vip Per Head is an offshore price per head company located in Costa Rica. Our products and excellent customer service make us one of the best pay per head service."></meta>
 			</Helmet>
 			<MenuDesplegable />

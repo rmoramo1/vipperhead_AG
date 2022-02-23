@@ -10,7 +10,7 @@ export const Benefits = () => {
 		<div className="container-fluid p-0">
 			<Helmet>
 				<title>Pay per Head Loyalty Program and Benefits</title>
-				<link rel="canonical" href="https://www.vipperhead.ag/benefits/" />
+				<link rel="canonical" href="https://www.vipperhead.ag/benefits" />
 				<meta name="description" content="Loyalty benefits are available for you. Any client that has been with us for two seasons will receive special prices throughout the year."></meta>
 			</Helmet>
 			<MenuDesplegable />

@@ -29,7 +29,7 @@ export const Home = () => {
 			<Helmet>
 				<title>Pay Per Head Sportsbook Services and Bookie Software</title>
 				<link rel="canonical" href="https://www.vipperhead.ag/" />
-				<meta name="description" content="VIP per Head is the best online pay Per Head bookie software service. VIP Per Head is a fully licensed sportsbook price Per Head solution."></meta>
+				<meta name="description" content="VIP Per Head is the best online Pay Per Head bookie software service. Licensed Sportsbook Price Per Head solution. Check now!"></meta>
 			</Helmet>
 			<MenuDesplegable />
 			<div className="d-none d-xl-block">
@@ -61,7 +61,7 @@ export const Home = () => {
 							<div className="titleSlider titleSlider3">
 								<div className="row g-0 textEspecial text-center">
 									<span className="col-12 titleSlider3Text1 text-white">we accept</span>
-									<span className="col-12 titleSlider3Text2">btc in software</span>
+									<span className="col-12 titleSlider3Text2">btc </span>
 								</div>
 							</div>
 						</div>
@@ -83,7 +83,7 @@ export const Home = () => {
 								<div className="row g-0 text-center">
 									<span className="col-12 titleSlider5Text3 text-white">we are ready to provide <br /> everything you need for the </span>
 									<span className="col-12 titleSlider5Text2 fw-bolder">best</span>
-									<span className="col-12 titleSlider5Text4">sportbook <br /> software</span>
+									<span className="col-12 titleSlider5Text4">sportsbook <br /> software</span>
 								</div>
 							</div>
 						</div>
@@ -120,7 +120,7 @@ export const Home = () => {
 							<img src={slide3} className="d-block imgSliderCel w-100" alt="image promo 3" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
 								<span className="col-12 p-0 m-0 g-0 text-white">we accept</span>
-								<span className="col-12 p-0 m-0 g-0 goldTextLight">btc in software</span>
+								<span className="col-12 p-0 m-0 g-0 goldTextLight">btc</span>
 							</div>
 						</div>
 						<div className="carousel-item">
@@ -135,7 +135,7 @@ export const Home = () => {
 							<img src={slide5} className="d-block imgSliderCel w-100" alt="image promo 5" />
 							<div className="row g-0  text-center position-absolute text-white text-uppercase tShadow textSliderMovil5">
 								<span className="col-12 text-white">we are ready to provide everything you need for the </span>
-								<span className="col-12 fw-bolder textEspecial">best sportbook software</span>
+								<span className="col-12 fw-bolder textEspecial">best sportsbook software</span>
 							</div>
 						</div>
 
@@ -166,20 +166,23 @@ export const Home = () => {
 					</div>
 					<div className="col-12 col-lg-7 bgBTChome"></div>
 				</div>
-				<div className="container">
-					<div className="container">
-						<div className="col-12 text-center text-white py-5" data-aos="zoom-in" data-aos-duration="2000">
+				<div className="container-fluid ">
+					<div className="row g-0 py-5">
+						<div className="col-lg-6 text-center text-white py-5" data-aos="zoom-in" data-aos-duration="2000">
 							<div className="col-12 fs-3">A PREMIUM EXPERIENCE</div>
 							<div className="col-12 fs-2 goldTitle">FOR EVERYONE</div>
-							<div className="col-12 col-lg-6 offset-lg-3 py-3">
+							<div className="col-12 py-3">
 								<p>
 									VIP Per Head is a company focused on providing the best Pay Per Head service on the market.
 									We have designed a superior pay-per-head service for professional bookies who demand the latest technologies, the best customer service, and the most comprehensive digital tools that will enable you to manage your business anytime and anywhere.
 								</p>
 							</div>
 						</div>
+						<div className="col-lg-6 d-flex align-items-center justify-content-center">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/mg9r9jryqIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
-					<div className="container text-center text-white">
+					<div className="container text-center text-white py-5">
 						<div className="col-12 tShadow fs-4">WHAT DO WE OFFER</div>
 						<div className="row g-0 my-5">
 							<div className="col-12 col-md-6 col-xl-4 py-md-3">
@@ -212,7 +215,7 @@ export const Home = () => {
 									</p>
 								</div>
 							</div>
-				
+
 							<div className="col-12 col-md-6 col-xl-4 py-md-3">
 								<div className="col-12 bgLiveBetHome">
 									<div className="textOffer col-12 fs-1 tShadow textEspecial">LIVE BETTING</div>
@@ -440,7 +443,7 @@ export const Home = () => {
 				</div>
 				<div className="row g-0">
 					{store.post.map((item, index) => {
-						if (index < 6) {
+						if (index < 14 || item.title.rendered == "The Best Bookie Software" || item.title.rendered == "Price Per Head Software to Keep Players Coming Back" || item.title.rendered == "Bookie Software for Football Fans" || item.title.rendered == "Be an Unstoppable Pay Per Head Bookie" || item.title.rendered == "How To Find Pay Per Head Bookie Software" || item.title.rendered == "What makes VIP Per Head one of the best suppliers in the market?") {
 							return (
 								<div className="col-12 col-md-6 col-lg-4 p-0" key={index}>
 									<Post

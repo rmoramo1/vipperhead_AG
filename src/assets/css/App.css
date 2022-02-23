@@ -2,6 +2,7 @@
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
+  background-color: #000;
 }
 a{
   text-decoration: none!important;
@@ -168,7 +169,7 @@ a:hover{
   width: 100%;
 } 
 .textSliderMovil{
-  top: 55%;
+  top: 35%;
 }
 .textSliderMovil5{
   top:33%
@@ -286,7 +287,7 @@ a:hover{
   color: #ffde8f;
   width: 100%;
   left: -20%;
-  bottom: 5%;
+  top: 8%;
 }
 .titleSlider4{
   bottom:5%;
@@ -304,8 +305,11 @@ a:hover{
 .titleSlider2Text2{
   font-size: 13vh!important;
 }
-.titleSlider2Text3,.titleSlider3Text2{
+.titleSlider2Text3{
   font-size: 5vh!important;
+}
+.titleSlider3Text2{
+  font-size: 5rem;
 }
 .titleSlider4Text3{
   font-family: Arial, Helvetica, sans-serif;

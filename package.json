@@ -18,6 +18,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.3",
+    "react-router-sitemap-generator": "0.0.8",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -45,5 +46,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

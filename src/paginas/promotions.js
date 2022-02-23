@@ -16,7 +16,7 @@ export const Promos = () => {
 		<div className="container-fluid p-0">
 			<Helmet>
 				<title>Pay per Head Bonuses and Promotions at VIP Per Head</title>
-				<link rel="canonical" href="https://www.vipperhead.ag/promotions/" />
+				<link rel="canonical" href="https://www.vipperhead.ag/promotions" />
 				<meta name="description" content="VIP Per Head welcomes you to our pay per head platform with different promotions that you can take advantage of from the moment you sign up."></meta>
 			</Helmet>
 			<MenuDesplegable />

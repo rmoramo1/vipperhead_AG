@@ -15,7 +15,7 @@ export const Products = () => {
         <div className="container-fluid p-0">
             <Helmet>
                 <title>Sports betting, Casino and Sportsbook software</title>
-                <link rel="canonical" href="https://www.vipperhead.ag/products/" />
+                <link rel="canonical" href="https://www.vipperhead.ag/products" />
                 <meta name="description" content="Our developers have expertly created a sports betting, casino and sportsbook software ready to be installed on your website and entertain your visitors."></meta>
             </Helmet>
             <MenuDesplegable />

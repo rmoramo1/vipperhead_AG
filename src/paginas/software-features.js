@@ -35,7 +35,7 @@ export const SoftwareFeatures = () => {
         <div className="container-fluid p-0 bgBlack">
             <Helmet>
                 <title>VIP Per Head Online Sports Betting Software Solutions</title>
-                <link rel="canonical" href="https://www.vipperhead.ag/software-features/" />
+                <link rel="canonical" href="https://www.vipperhead.ag/software-features" />
                 <meta name="description" content="VIP Per Head online betting software solutions are the engine that powers the operational end of your private betting and bookmaker business."></meta>
             </Helmet>
             <MenuDesplegable />

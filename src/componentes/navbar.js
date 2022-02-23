@@ -55,7 +55,7 @@ export const Navbar = () => {
                             <div className="row">
                                 <div className="col-12">
                                     <div className="row">
-                                        <div className="col-6">
+                                        <div className="col-4">
                                             <button className="btn fw-bold goldText" data-bs-toggle="modal" data-bs-target="#paymentModal">
                                                 PAYMENT METHODS
                                             </button>
@@ -70,11 +70,16 @@ export const Navbar = () => {
                                                     <i className="fab fa-twitter"></i>
                                             </Link>
                                         </div>
-                                        {/* <div className="col-2 fs-4">
-                                            <Link to="/" aria-label="link to microphone podcast">
-                                                <i className="fas fa-microphone"></i>
+                                        <div className="col-2 fs-4">
+                                            <Link to={{pathname: "https://www.youtube.com/channel/UCvi6hyCvaQ7mFNM1ylAilZQ"}} rel="noopener noreferrer" target={"_blank"}  aria-label="link to microphone podcast">
+                                                <i className="fab fa-youtube"></i>
                                             </Link>
-                                        </div> */}
+                                        </div>
+                                        <div className="col-2 fs-4">
+                                            <Link to={{pathname: "https://www.instagram.com/vipperhead.ag/"}} rel="noopener noreferrer" target={"_blank"}  aria-label="instagram">
+                                                <i className="fab fa-instagram"></i>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

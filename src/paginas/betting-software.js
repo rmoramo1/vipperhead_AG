@@ -19,7 +19,7 @@ export const BettingSoftware = () => {
         <div className="container-fluid p-0">
             <Helmet>
                 <title>Best Sports Betting and Sportsbook Software Solutions</title>
-                <link rel="canonical" href="https://www.vipperhead.ag/betting-software/" />
+                <link rel="canonical" href="https://www.vipperhead.ag/betting-software" />
                 <meta name="description" content="VIP Per Head works with the best sports betting software solutions with the highest security and privacy standards."></meta>
             </Helmet>
             <MenuDesplegable />
