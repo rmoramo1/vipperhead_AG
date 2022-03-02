@@ -1,11 +1,9 @@
-import React, { useContext, useState, useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext";
+
 
 const Post = props => {
-    const { store, actions } = useContext(Context);
-
     return (
         <div className="col-12 p-1 p-xl-5">
             <div className="imgpost">

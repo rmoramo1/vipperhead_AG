@@ -54,7 +54,7 @@ export const Products = () => {
                     <div className="row g-0" data-aos="fade-right" data-aos-duration="2000">
                         <div className="col-12 col-xl-4 p-5">
                             <div className="col-12 goldText fs-1">
-                                SPORTSBOOK
+                                SPORTSBOOK SOFTWARE
                             </div>
                             <div className="col-12">
                                 Our developers have expertly created a sportsbook software ready to be installed on your website and entertain your visitors. You will never be short of sharp lines and betting options.
