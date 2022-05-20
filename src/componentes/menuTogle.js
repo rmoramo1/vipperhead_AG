@@ -7,7 +7,7 @@ export const MenuDesplegable = () => {
             <div className="menuMovil goldText">
                 <div className="row g-0 fs-3 pt-3">
                     <div className="col-12 text-center">
-                        <button id="menuTogle"  className="btn text-white tShadow fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="menu button" aria-expanded="false" aria-controls="menu">
+                        <button id="menuTogle" className="btn text-white tShadow fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="menu button" aria-expanded="false" aria-controls="menu">
                             <i className="fas fa-bars"></i>
                         </button>
                     </div>
@@ -28,7 +28,7 @@ export const MenuDesplegable = () => {
                         </li>
                         <li>
                             <Link className="goldText text-decoration-none py-2" to="/betting-software">
-                                BETTING SOFTWARE
+                                BOOKIE SOFTWARE
                             </Link>
                         </li>
                         <li>
@@ -52,7 +52,7 @@ export const MenuDesplegable = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="goldText text-decoration-none py-2" to={{pathname: "https://www.vipperhead.ag/blog/"}} target="_blank">
+                            <Link className="goldText text-decoration-none py-2" to={{ pathname: "https://www.vipperhead.ag/blog/" }} target="_blank">
                                 BLOG
                             </Link>
                         </li>

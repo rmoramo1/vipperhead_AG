@@ -1,31 +1,38 @@
+import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import injectContext from "./store/appContext";
-
-/* pages*/
-import { About } from "./paginas/about-us";
-import { Benefits } from "./paginas/benefits";
-import { Promos } from "./paginas/promotions";
-import { Home } from "./paginas/home";
-import { BettingSoftware } from "./paginas/betting-software";
-import { SoftwareFeatures } from "./paginas/software-features";
-import { Products } from "./paginas/products";
-import { Contact } from "./paginas/contact";
-import { Faqs } from "./paginas/faqs";
-import { Sitemap } from "./paginas/siteMap";
-import { Joinus } from "./paginas/joinus";
-import { Glossary } from "./paginas/glossary";
-import { Error } from "./paginas/404";
-
+import AOS from "aos";
 /*components*/
+import Loader from './componentes/loader';
 import { Navbar } from "./componentes/navbar";
 import { Footer } from "./componentes/footer";
 import { UpBTN } from "./componentes/upBTN";
 
+/* pages*/
+const Home = lazy(() => import('./paginas/home'));
+const About = lazy(() => import('./paginas/about-us'));
+const Benefits = lazy(() => import('./paginas/benefits'));
+const Promos = lazy(() => import('./paginas/promotions'));
+const BettingSoftware = lazy(() => import('./paginas/betting-software'));
+const SoftwareFeatures = lazy(() => import('./paginas/software-features'));
+const Products = lazy(() => import('./paginas/products'));
+const Contact = lazy(() => import('./paginas/contact'));
+const Faqs = lazy(() => import('./paginas/faqs'));
+const Sitemap = lazy(() => import('./paginas/siteMap'));
+const Joinus = lazy(() => import('./paginas/joinus'));
+const Glossary = lazy(() => import('./paginas/glossary'));
+const Error = lazy(() => import('./paginas/404'));
+
 function App() {
+	useEffect(() => {
+		AOS.init({ duration: 1500 });
+		AOS.refresh();
+	}, []);
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Navbar />
+				<Suspense fallback={<Loader />}>
+					<Navbar />
 					<Switch>
 						<Route exact path="/">
 							<Home />
@@ -67,12 +74,12 @@ function App() {
 							<Sitemap />
 						</Route>
 						<Route>
-							<Error/>
+							<Error />
 						</Route>
 					</Switch>
-				<Footer/>
-				<UpBTN/>
-		
+					<Footer />
+					<UpBTN />
+				</Suspense>
 			</BrowserRouter>
 		</div>
 	);

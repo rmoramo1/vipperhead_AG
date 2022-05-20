@@ -10,7 +10,7 @@ import promo2 from "../assets/img/products/sportbooks.jpg";
 import promo3 from "../assets/img/products/skinpremium.jpg";
 import promo4 from "../assets/img/products/casino.jpg";
 import promo5 from "../assets/img/products/skinVip.jpg";
-export const Products = () => {
+function Products(){
     return (
         <div className="container-fluid p-0">
             <Helmet>
@@ -20,8 +20,8 @@ export const Products = () => {
             </Helmet>
             <MenuDesplegable />
             <div className="sliderProducts">
-                <div className="titleSlider textEspecial goldTitle">
-                    PRODUCTS
+                <div className="titleSlider titleProducts textEspecial">
+                Everything you need to run a bookie business is right here
                 </div>
                 <MenuHover />
             </div>
@@ -117,3 +117,4 @@ export const Products = () => {
         </div>
     );
 };
+export default Products;

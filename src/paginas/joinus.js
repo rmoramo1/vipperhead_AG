@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 /*componentes*/
 import { MenuDesplegable } from "../componentes/menuTogle";
 import { MenuHover } from "../componentes/menuHover";
-export const Joinus = () => {
+function Joinus(){
     const [toSend, setToSend] = useState({
         fullname: '',
         email: '',
@@ -75,9 +75,9 @@ export const Joinus = () => {
                 <meta name="description" content="Price per Head Sportsbook Bookie Software provides the highest Pay Per Head solutions in the industry."></meta>
             </Helmet>
             <MenuDesplegable />
-            <div className="sliderFaqs" >
+            <div className="sliderJoin" >
                 <div className="titleSliderBene goldText col-12 text-center textEspecial pt-5 text-uppercase">
-                    join us
+                ENTER YOUR INFORMATION BELOW
                 </div>
                 <MenuHover />
             </div>
@@ -217,3 +217,4 @@ export const Joinus = () => {
         </div>
     );
 };
+export default Joinus;

@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { MenuDesplegable } from "../componentes/menuTogle";
 import { MenuHover } from "../componentes/menuHover";
 
-export const Sitemap = () => {
+function Sitemap(){
     return (
         <div className="container-fluid p-0 bgBlack text-center">
             <Helmet>
@@ -119,3 +119,4 @@ export const Sitemap = () => {
         </div>
     );
 };
+export default Sitemap;

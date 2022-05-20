@@ -5,7 +5,7 @@ import { MenuHover } from "../componentes/menuHover";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-export const Faqs = () => {
+function Faqs(){
     return (
         <div className="container-fluid p-0 bgBlack">
             <Helmet>
@@ -136,3 +136,4 @@ export const Faqs = () => {
         </div>
     );
 };
+export default Faqs;

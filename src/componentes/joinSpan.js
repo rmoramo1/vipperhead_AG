@@ -7,8 +7,8 @@ export const JoinSpan = () => {
                 <div className="col-12 text-center fs-4 text-uppercase goldText mt-5">
                     join the select group of bookies that use vip per head today
                 </div>
-                <div className="col-12 text-center fs-5  goldText">
-                    Complete the form and access a  free 3-weeks trial
+                <div className="col-12 text-center fs-5 goldText text-uppercase">
+                    Complete the form and access a free 3-weeks trial
                 </div>
                 <div className="spanGoldBorderBlack my-3"></div>
                 <div className="col-12 text-center mb-5">

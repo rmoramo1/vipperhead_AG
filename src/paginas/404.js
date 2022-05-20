@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet";
 /*componentes*/
 import { MenuDesplegable } from "../componentes/menuTogle";
 
-export const Error = () => {
+function Error(){
     return (
         <div className="container-fluid p-0 bgBlack text-center">
             <Helmet>
@@ -27,3 +27,4 @@ export const Error = () => {
         </div>
     );
 };
+export default Error;

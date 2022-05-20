@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
-import logo from "../assets/img/logoRounded.png"
+// import logo from "../assets/img/logoRounded.png"
+import logo from "../assets/img/logoSquare.png"
+import bandera from "../assets/img/esp.jpg"
+import banderaENG from "../assets/img/eng.png"
 import bitcoin from "../assets/img/payMethod/bitcoin.png"
 import etherium from "../assets/img/payMethod/etherium.png"
 import bankWire from "../assets/img/payMethod/Bank-Wire-online-casinos.jpg"
@@ -15,7 +18,83 @@ export const Navbar = () => {
     return (
         <div>
             <div className="degBlackPurple text-center navBarSite d-flex align-items-center h-100">
-                <div className="container-fluid">
+                <div className="container-fluid p-0">
+                    <div className="row g-0">
+                        <div className="col-lg-4">
+                            <div className="col-12 col-lg-3">
+                                <Link to="/">
+                                    <img className="logoRedondoXS" src={logo} alt="logo"></img>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="col-12 py-3">
+                                <div className="row">
+                                    <div className="col-lg-6 g-0 p-0 ">
+                                        <a href="tel:+18889923891">
+                                            <div className="col-12 goldText">1-888-992-3891</div>
+                                            <div className="col-12 text-center">
+                                                <img className="bandera" src={banderaENG}></img>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div className="col-lg-6 g-0 p-0">
+                                        <a href="tel:+018000990754">
+                                            <div className="col-12 goldText">01-800-099-0754</div>
+                                            <div className="col-12 text-white">
+                                                <div className="row">
+                                                    <div className="col-12 text-center">
+                                                        <img className="bandera" src={bandera}></img>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 d-flex align-content-center justify-content-center">
+                            <div className="row g-0 w-100">
+                                <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                                    <Link to={{ pathname: "https://vipperhead.mx/" }} rel="noopener noreferrer" className="btn gregBlack goldText" target={"_blank"}>
+                                        Versión en Español 
+                                        {/* <img className="bandera" src={bandera} alt="logo"></img> */}
+                                    </Link>
+                                </div>
+                                <div className="col-12 col-lg-6 d-flex align-items-center goldText">
+                                    <div className="row g-0 w-100">
+                                        <div className="col-2">
+                                            <button className="btn fw-bold goldText" data-bs-toggle="modal" data-bs-target="#paymentModal">
+                                                <i className="fas fa-money-bill-wave"></i>
+                                            </button>
+                                        </div>
+                                        <div className="col-2 fs-4 text-center">
+                                            <Link to={{ pathname: "https://www.facebook.com/Vipperhead-105367985078530" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">
+                                                <i className="fab fa-facebook-f"></i>
+                                            </Link>
+                                        </div>
+                                        <div className="col-2 fs-4 text-center">
+                                            <Link to={{ pathname: "https://twitter.com/PerheadVip" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to linkedin">
+                                                <i className="fab fa-twitter"></i>
+                                            </Link>
+                                        </div>
+                                        <div className="col-2 fs-4 text-center">
+                                            <Link to={{ pathname: "https://www.youtube.com/channel/UCvi6hyCvaQ7mFNM1ylAilZQ" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to microphone podcast">
+                                                <i className="fab fa-youtube"></i>
+                                            </Link>
+                                        </div>
+                                        <div className="col-2 fs-4 text-center">
+                                            <Link to={{ pathname: "https://www.instagram.com/vipperhead.ag/" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
+                                                <i className="fab fa-instagram"></i>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className="container-fluid">
                     <div className="col-12 col-lg-4 text-center d-block d-lg-none">
                         <Link to="/">
                             <img className="logoRedondoXS" src={logo} alt="logo"></img>
@@ -85,7 +164,7 @@ export const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="modal fade" id="paymentModal" tabIndex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
                 <div className="modal-dialog">

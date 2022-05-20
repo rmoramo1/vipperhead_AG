@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 /* img */
-import logo from "../assets/img/logoSquare.png";
+import logo from "../assets/img/logoRounded.png";
 
 export const Footer = () => {
     const [toSend, setToSend] = useState({
@@ -196,7 +196,7 @@ export const Footer = () => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
     return (
-        <div className="degBlackPurple pt-5">
+        <div className="degBlackPurple">
             <div className="col-12 text-center">
                 <HashLink smooth to="/home#homeTop">
                     <img className="img-fluid" src={logo} alt="logo"></img>
@@ -353,7 +353,7 @@ export const Footer = () => {
             <div className="darkGrey text-center">
                 <div className="row g-0 py-4">
                     <div className="col-12 col-lg-4 goldText">
-                        Copyright 2021 VIP Per Head
+                        Copyright 2022 VIP Per Head
                     </div>
                     <div className="col-12 col-lg-4">
                         <div className="row g-0 g-0">

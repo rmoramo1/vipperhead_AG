@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 /*componentes*/
 import { MenuDesplegable } from "../componentes/menuTogle";
 import { MenuHover } from "../componentes/menuHover";
-export const Contact = () => {
+function Contact(){
 	const [toSend, setToSend] = useState({
 		fullname: '',
 		email: '',
@@ -93,7 +93,7 @@ export const Contact = () => {
 			<MenuDesplegable />
 			<div className="sliderContact">
 				<div className="titleSliderBene goldTextLight col-12 text-center textEspecial">
-					Contact
+				HOW CAN WE HELP?
 				</div>
 				<MenuHover />
 			</div>
@@ -234,3 +234,4 @@ export const Contact = () => {
 			</div>
 			);
 };
+export default Contact;

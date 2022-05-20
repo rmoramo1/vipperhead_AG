@@ -29,8 +29,7 @@ import player10 from "../assets/img/play/Sports Betting Logo Mode.JPG";
 import player11 from "../assets/img/play/Sports Betting Old.JPG";
 import player12 from "../assets/img/play/Table Game Pai Gow.JPG";
 
-
-export const SoftwareFeatures = () => {
+function SoftwareFeatures() {
     return (
         <div className="container-fluid p-0 bgBlack">
             <Helmet>
@@ -62,24 +61,24 @@ export const SoftwareFeatures = () => {
                     </div>
                 </div>
                 <div className="container">
-
                     <div className="col-12 text-center text-white">
                         <div className="row g-0 my-5">
-                            <div className="col-12 col-lg-4  py-lg-3 mt-3">
+
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
                                 <div className="col-12 bgSportHome">
-                                    <div className="textOffer col-12 tShadow text-uppercase">
+                                    <div className="textOffer col-12 tShadow">
                                         <p className="textEspecial fs-1">
-                                            BOOKIE SOFTWARE
+                                            SPORTSBOOK SOFTWARE
                                         </p>
                                         <p>
-                                            FULL-FEATURED SPORTSBOOK WITH BIGGEST SELECTION OF LIGUES AVAILABLE
+                                           Full-featured Sportsbook with biggest selection of ligues available
                                         </p>
 
                                     </div>
                                 </div>
 
                             </div>
-                            <div className="col-12 col-lg-4  py-lg-3 mt-3">
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
                                 <div className="col-12 bgCasinoHome">
                                     <div className="textOffer col-12 tShadow  text-uppercase">
                                         <p className="textEspecial fs-1">
@@ -91,9 +90,9 @@ export const SoftwareFeatures = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-lg-4  py-lg-3 mt-3">
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
                                 <div className="col-12 bgOnLineCasinoHome">
-                                    <div className="textOffer col-12 tShadow text-uppercase">
+                                    <div className="textOffer col-12 tShadow">
                                         <p className="textEspecial fs-1">LIVE CASINO</p>
                                         <p>
                                             live bettin for all major leagues and tournaments.
@@ -101,38 +100,60 @@ export const SoftwareFeatures = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="row g-0 my-5">
-                            <div className="col-12 col-lg-4  py-lg-3 mt-3">
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
                                 <div className="col-12 bgLiveBetHome">
-                                    <div className="textOffer col-12 tShadow text-uppercase">
-                                        <p className="textEspecial fs-1">MOBILE INTERFACE</p>
-                                        <p>
-                                            AVAILABLE FOR DESKTOP AND DEVICES..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-lg-4  py-lg-3 mt-3">
-                                <div className="col-12 bgHorseHome">
-                                    <div className="textOffer col-12 tShadow text-uppercase">
-                                        <p className="textEspecial fs-1">RACING</p>
-                                        <p>
-                                            offer your players full-features racebook with all the major tracks.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-lg-4 py-lg-3 mt-3">
-                                <div className="col-12 bgCallCenterHome">
-                                    <div className="textOffer col-12  tShadow text-uppercase">
+                                    <div className="textOffer col-12  tShadow">
                                         <p className="fs-1 textEspecial">lIVE BETTING</p>
                                         <p>
-                                            OUR REPRESENTATIVES ARE AVAILABLE ON PHONES AND LIVE CHAT 25/7/365.
+                                            Our representatives are available on phones and live chat 25/7/365.
                                         </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="row g-0 my-5">
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
+                                <div className="col-12 bgHorseHome">
+                                    <div className="textOffer col-12 tShadow">
+                                        <p className="textEspecial fs-1">RACES</p>
+                                        <p>
+                                            Offer your players full-features racebook with all the major tracks.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
+                                <div className="col-12 bgPoker">
+                                    <div className="textOffer col-12 tShadow">
+                                        <p className="textEspecial fs-1">Poker</p>
+                                        <p>
+                                        We're here to make your poker playing experience the best it can be. We offer a variety of games.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
+                                <div className="col-12 bgProp_Builder">
+                                    <div className="textOffer col-12 tShadow">
+                                        <p className="textEspecial fs-1">Prop Builder</p>
+                                        <p>
+                                        The pro builder, this level of interactivity adds even more dynamism your bets. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-3 py-lg-3 mt-3">
+                                <div className="col-12 bgCallCenterHome">
+                                    <div className="textOffer col-12 tShadow">
+                                        <p className="textEspecial fs-1">BILINGUAL CALL CENTER</p>
+                                        <p>
+                                            Offer your players full-features racebook with all the major tracks.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div className="col-12 goldText text-center text-uppercase py-3">
                             and much more
@@ -287,3 +308,4 @@ export const SoftwareFeatures = () => {
         </div>
     );
 };
+export default SoftwareFeatures;

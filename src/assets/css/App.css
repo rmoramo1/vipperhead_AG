@@ -6,7 +6,8 @@
 }
 a{
   text-decoration: none!important;
-  color: #b2a879;
+  /* color: #b2a879; */
+  color: #CACACA;
 }
 a:hover{
   color: #fff!important;
@@ -24,6 +25,9 @@ a:hover{
   min-height: 15vh;
 }
 /*menu*/
+.bandera{
+  width: 45px;
+}
 .menu,.menuMovil{
   position: absolute;
   width: 35%;
@@ -82,25 +86,28 @@ a:hover{
   background-color: #000;
 }
 .degBlackPurple{
-  background: linear-gradient(to right, #000000 0%,#3e002f 50%,#000000 100%)
+  background: linear-gradient(to right, #000000 0%,#52033D 50%,#52033D 70%,#000000 80%)
 }
 .purple{
-  background-color: #1c0015;
+  background-color: #52033D;
 }
 .purpleOp{
   background-color: rgba(28, 0, 21,.8);
 }
 .promoPurple{
-  background-color: #23001a;
+  background-color: #52033D;
 }
 .goldTitle{
-  color: #8e834d!important;
+  /* color: #8e834d!important;CACACA */
+  color: #CACACA!important; 
 }
 .goldText{
-  color: #b2a879!important;
+  /* color: #b2a879!important; */
+  color: #CACACA!important;
 }
 .goldTextLight{
-  color:#ffde8f;;
+  /* color:#ffde8f; */
+  color:#e0e0e0;
 }
 
 .bgBeigeDark{
@@ -116,19 +123,25 @@ a:hover{
   background: linear-gradient(135deg, #3c3c3c 0%,#000 50%,#3c3c3c 100%);
 }
 .bgGold{
-  background: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%);
+  background: linear-gradient(135deg, #50504f 2%,#50504f 17%,#c2c2c2 27%,#e0e0e0 46%,#e6e6e6 65%,#c2c2c2 81%,#50504f 100%);
+  /* background: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%); */
 }
 .bgGold:hover{
-  background: linear-gradient(135deg, #dbd5a5 2%,#a0996f 17%,#a0996f 27%,#635c43 46%,#bfba8f 65%,#a0996f 81%,#dbd5a5 100%);
-  color: #fff!important;
+  background: linear-gradient(135deg, #c2c2c2 2%,#e0e0e0 17%,#e0e0e0 27%,#50504f 46%,#c2c2c2 65%,#e0e0e0 81%,#c2c2c2 100%);
+  /* background: linear-gradient(135deg, #dbd5a5 2%,#a0996f 17%,#a0996f 27%,#635c43 46%,#bfba8f 65%,#a0996f 81%,#dbd5a5 100%); */
+  color: #000!important;
 }
 .blue{
   background-color: #080023;
 }
-.inputTextGold::placeholder { color: #b2a879}
+.inputTextGold::placeholder {
+   /* color: #b2a879; */
+   color: #b1b1b1;
+  }
 /*span*/
 .spanGold{
-  background: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%);
+  background: linear-gradient(135deg, #000000 2%,#575757 17%,#7a7a7a 27%,#cccccc 46%,#7a7a7a 65%,#575757 81%,#000000 100%);
+  /* background: linear-gradient(135deg, #59512d 2%,#746d45 17%,#a0996f 27%,#dbd5a5 46%,#bfba8f 65%,#8b8464 81%,#635c43 100%); */
   width:100%;
   height: 8px;
 }
@@ -149,7 +162,7 @@ a:hover{
 }
 @media only screen and (max-width: 768px) {
   .logoRedondoXS{
-    max-height: 75px;
+    max-height: 60px;
   }
 }
 .navBarSite{
@@ -181,16 +194,16 @@ a:hover{
   background-repeat: no-repeat;
   min-height: 400px;
 }
-.bgSportHome,.bgCasinoHome,.bgOnLineCasinoHome,.bgLiveBetHome,.bgHorseHome,.bgCallCenterHome{
+.bgSportHome,.bgCasinoHome,.bgOnLineCasinoHome,.bgLiveBetHome,.bgHorseHome,.bgPoker,.bgProp_Builder,.bgCallCenterHome{
   background-image: url("../img/servicesHome/Sportbook-software.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 370px;
+  min-height: 280px;
   position: relative;
   transition: all .2s linear;
 }
-.bgSportHome:hover,.bgCasinoHome:hover,.bgOnLineCasinoHome:hover,.bgLiveBetHome:hover,.bgHorseHome:hover,.bgCallCenterHome:hover{
+.bgSportHome:hover,.bgCasinoHome:hover,.bgOnLineCasinoHome:hover,.bgLiveBetHome:hover,.bgHorseHome:hover,.bgPoker:hover,.bgProp_Builder:hover,.bgCallCenterHome:hover{
   background-size: 110% 110%;
 }
 .bgCasinoHome{
@@ -208,6 +221,12 @@ a:hover{
 .bgCallCenterHome{
   background-image: url("../img/servicesHome/call-center.jpg");
 }
+.bgProp_Builder{
+  background-image: url("../img/servicesHome/prop_builder.jpg");
+}
+.bgPoker{
+  background-image:url("../img/servicesHome/poker.jpg") ;
+}
 .textOffer{
   position: absolute;
   bottom: 2%;
@@ -224,13 +243,21 @@ a:hover{
 /*SLIDER*/
 .titleSlider,.titleSliderBene{
   position: absolute;
-  bottom: 10%;
+  bottom: 30%;
   left: 15%;
   font-size: 8vh;
   color: #fff;
   text-shadow: 0px 0px 5px  #000;
 }
-.sliderAbout,.sliderBeneficios,.sliderBettingSoftware,.sliderSoftwareFeatures,.sliderProducts,.sliderFaqs,.sliderPromos,.sliderBlog,.sliderContact,.sliderError{
+.titleProducts{
+  font-size: 6vh;
+  left: 10%;
+  bottom: 40%;
+  text-shadow: 0px 0px 10px  #000;
+  background-color: rgba(0,0,0,.5);
+  padding: 0 35px;
+}
+.sliderAbout,.sliderBeneficios,.sliderBettingSoftware,.sliderSoftwareFeatures,.sliderProducts,.sliderFaqs,.sliderPromos,.sliderBlog,.sliderContact,.sliderError,.sliderJoin{
   width: 100%;
   height: 70vh;
   background-image: url("../img/sliderIndex.jpg");
@@ -272,7 +299,9 @@ a:hover{
 .sliderPromos{
   background-image: url("../img/promos.jpg");
 }
-
+.sliderJoin{
+  background-image: url("../img/sliderJoinUs.jpg");
+}
 .titleSlider1{
   left: -30%;
   bottom: 20%;
@@ -495,3 +524,12 @@ background-image: url("../img/softwarebetting/poker.JPG");
   border-right: 1px solid #383215;
 }
 /*roy*/
+/* loader*/
+.loader{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/loader.webp');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

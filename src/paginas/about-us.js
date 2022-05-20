@@ -8,7 +8,7 @@ import { MenuDesplegable } from "../componentes/menuTogle";
 import { MenuHover } from "../componentes/menuHover";
 import { JoinSpan } from "../componentes/joinSpan";
 
-export const About = () => {
+function About (){
 	useEffect(() => {
 		AOS.init({ duration: 1500 });
 	}, []);
@@ -105,3 +105,4 @@ export const About = () => {
 		</div>
 	);
 };
+export default About;

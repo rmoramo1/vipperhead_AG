@@ -14,7 +14,7 @@ import casino from "../assets/img/iconsSoftware/casino.png";
 import liveCasino from "../assets/img/iconsSoftware/casinoFicha.png";
 import { HashLink } from "react-router-hash-link";
 
-export const BettingSoftware = () => {
+function BettingSoftware(){
     return (
         <div className="container-fluid p-0">
             <Helmet>
@@ -25,7 +25,7 @@ export const BettingSoftware = () => {
             <MenuDesplegable />
             <div className="sliderBettingSoftware">
                 <div className="titleSliderBene col-12 text-center textEspecial text-uppercase">
-                    Betting Software
+                     BOOKIE SOFTWARE
                 </div>
                 <MenuHover />
             </div>
@@ -152,7 +152,7 @@ export const BettingSoftware = () => {
                                     </div>
                                     <div className="col-12 goldText text-uppercase display-2 fw-bold">betting</div>
                                     <div className="col-12 py-3 lh-lg fs-5 text-white">
-                                        Bookies that use VIP Per Head services can offer their bettors a wide range of betting options, including traditional but popular leagues such as the NFL, MLB, NBA, and NHL. The players will also access international betting options such as tennis, soccer, and even the Olympic games. VIP Per Head goes one step further and includes other types of betting options such as politics and entertainment.
+                                        Bookies that use VIP Per Head services can offer their bettors a wide range of betting options, including traditional but popular leagues such as the NFL, MLB, NBA,NHL and much more! The players will also access international betting options such as tennis, soccer, and even the Olympic games. VIP Per Head goes one step further and includes other types of betting options such as politics and entertainment.
                                     </div>
                                     <div className="col-12 py-3 lh-lg fs-5 goldText">
                                         With a catalog of betting options as complete as this one, bookies can serve all types of customers, ensuring a more profitable betting business.
@@ -253,7 +253,7 @@ export const BettingSoftware = () => {
                                     </div>
                                     <div className="col-12 goldText text-uppercase display-2 fw-bold">casino</div>
                                     <div className="col-12 py-3 lh-lg fs-5 text-white">
-                                        VIP bet Per Head also offers a live casino, which features flesh and bone dealers who distribute the cards or spin the roulette live through a system similar to a video conference.
+                                        VIP Per Head also offers a live casino, which features flesh and bone dealers who distribute the cards or spin the roulette live through a system similar to a video conference.
                                     </div>
                                     <div className="col-12 py-3 lh-lg fs-5 goldText">
                                         This type of casino takes the experience of playing online to a new level. Following the premium philosophy of VIP Per Head, players access a game room with highly trained dealers who will make sure to meet all the player’s expectations.
@@ -283,3 +283,4 @@ export const BettingSoftware = () => {
         </div>
     );
 };
+export default BettingSoftware;

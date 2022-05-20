@@ -1,8 +1,10 @@
 /*componentes*/
+import React, { useEffect } from "react";
 import { JoinUsLittle } from "../componentes/joinUsLittle";
 import { MenuDesplegable } from "../componentes/menuTogle";
 import { MenuHover } from "../componentes/menuHover";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
 /*img */
 import promo1 from "../assets/img/promos/Promo1.jpg"
 import promo2 from "../assets/img/promos/pormo2.jpg"
@@ -11,7 +13,11 @@ import promo4 from "../assets/img/promos/promo4.jpg"
 import promo5 from "../assets/img/promos/promo5.jpg"
 import promo6 from "../assets/img/promos/Promo6.jpg"
 
-export const Promos = () => {
+function Promos() {
+	useEffect(() => {
+		AOS.init({ duration: 1500 });
+		AOS.refresh();
+	}, []);
 	return (
 		<div className="container-fluid p-0">
 			<Helmet>
@@ -22,7 +28,7 @@ export const Promos = () => {
 			<MenuDesplegable />
 			<div className="sliderPromos">
 				<div className="titleSlider textEspecial">
-					PROMOS
+					We have great promotions for you to increase your profits.
 				</div>
 				<MenuHover />
 			</div>
@@ -67,3 +73,4 @@ export const Promos = () => {
 		</div>
 	);
 };
+export default Promos;

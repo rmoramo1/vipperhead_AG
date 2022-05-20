@@ -1,6 +1,4 @@
-import react from "react";
-
-export const Glossary=()=>{
+function Glossary(){
     return(
         <div className="container py-5">
             <div className="text-center goldTitle"> <h1>Glossary</h1></div>
@@ -116,4 +114,5 @@ export const Glossary=()=>{
             <p className="text-white">One more term to depict a "sharp" or "savvy" bettor. In many cases, this is an expert who is very much educated and learne.</p>
         </div>
     )
-}
+};
+export default Glossary;
