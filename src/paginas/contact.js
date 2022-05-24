@@ -100,13 +100,12 @@ function Contact(){
 			<div className="spanGold"></div>
 			<div className="col-12 bgBlack py-5">
 				<div className="row g-0">
-					<div className="col-12 col-xl-8 p-5" name="contact" id="Contact">
-						<div className="col-12 text-white fs-2 text-uppercase">contact us</div>
+					<div className="col-12 col-xl-8 pb-5" name="contact" id="Contact">
 						<form onSubmit={contacSend}>
 							<div className="row g-0">
 								<div className="col-12 col-xl-6">
-									<div className="row g-0 p-2">
-										<input className="bg-dark col-12 inputTextGold text-white my-3" name="fullname" id="fullname" type="text" placeholder="FULL NAME*" aria-label="fullname" value={toSend.fullname} onChange={handleChange} required />
+									<div className="row g-0 p-2 pt-0">
+										<input className="bg-dark col-12 inputTextGold text-white mb-3" name="fullname" id="fullname" type="text" placeholder="FULL NAME*" aria-label="fullname" value={toSend.fullname} onChange={handleChange} required />
 										<input className="bg-dark inputTextGold text-white col-12 my-3" name="country" id="country" type="text" placeholder="COUNTRY" aria-label="country" value={toSend.country} onChange={handleChange} />
 										<input className="bg-dark inputTextGold text-white col-12 my-3" name="agencyName" id="agencyName" type="text" placeholder="AGENCY NAME" aria-label="agencyName" value={toSend.agencyName} onChange={handleChange} />
 									</div>
@@ -155,8 +154,8 @@ function Contact(){
 										</div>
 									</div>
 									<div className="col-12 col-xl-6 text-white">
-										<div className="row g-0 p-2">
-											<input className="bg-dark inputTextGold text-white col-12 my-3" name="email" id="email" type="email" placeholder="EMAIL ADDRESS*" aria-label="emailAddress" value={toSend.email} onChange={handleChange} required />
+										<div className="row g-0 p-2 pt-0">
+											<input className="bg-dark inputTextGold text-white col-12 mb-3" name="email" id="email" type="email" placeholder="EMAIL ADDRESS*" aria-label="emailAddress" value={toSend.email} onChange={handleChange} required />
 											<input className="bg-dark inputTextGold text-white col-12 my-3" name="phone" id="phone" type="number" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} />
 											<input className="bg-dark inputTextGold text-white col-12 my-3" name="players" id="players" type="number" placeholder="N° OF PLAYERS" aria-label="players" value={toSend.players} onChange={handleChange} />
 										</div>
@@ -214,7 +213,7 @@ function Contact(){
 								</div>
 						</form>
 					</div>
-						<div className="col-12 col-xl-4 p-2">
+						<div className="col-12 col-xl-4">
 							<div className="bg-dark col-12 p-5 text-center goldText">
 								<div className="col-12 py-3 fs-2  text-white text-uppercase">contact us now</div>
 								<div className="col-12 py-3 fs-4 text-uppercase">customer service and sales</div>

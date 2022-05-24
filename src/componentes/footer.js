@@ -304,14 +304,24 @@ export const Footer = () => {
                                                     <div className="row g-0 g-0">
                                                         <div className="col-12">
                                                             <div className="row g-0">
-                                                                <div className="col-2 fs-4">
+                                                                <div className="col-2 fs-4 text-center">
                                                                     <Link to={{ pathname: "https://www.facebook.com/Vipperhead-105367985078530" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">
                                                                         <i className="fab fa-facebook-f"></i>
                                                                     </Link>
                                                                 </div>
-                                                                <div className="col-2 fs-4">
+                                                                <div className="col-2 fs-4 text-center">
                                                                     <Link to={{ pathname: "https://twitter.com/PerheadVip" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to linkedin">
                                                                         <i className="fab fa-twitter"></i>
+                                                                    </Link>
+                                                                </div>
+                                                                <div className="col-2 fs-4 text-center">
+                                                                    <Link to={{ pathname: "https://www.youtube.com/channel/UCvi6hyCvaQ7mFNM1ylAilZQ" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to microphone podcast">
+                                                                        <i className="fab fa-youtube"></i>
+                                                                    </Link>
+                                                                </div>
+                                                                <div className="col-2 fs-4 text-center">
+                                                                    <Link to={{ pathname: "https://www.instagram.com/vipperhead.ag/" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
+                                                                        <i className="fab fa-instagram"></i>
                                                                     </Link>
                                                                 </div>
                                                                 {/* <div className="col-2 fs-4">
@@ -367,7 +377,7 @@ export const Footer = () => {
                                 <Link className="goldText" to="/siteMap">SITE MAP</Link>
                             </div>
                             <div className="col-12 col-lg-3">
-                                <Link className="goldText" to="/joinus">SING UP</Link>
+                                <Link className="goldText" to="/joinus">Join Us</Link>
                             </div>
                         </div>
                     </div>

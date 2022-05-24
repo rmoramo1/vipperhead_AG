@@ -12,10 +12,16 @@ import { JoinSpan } from "../componentes/joinSpan";
 import Post from "../componentes/post";
 /* img */
 import slide1 from "../assets/img/sliderHome/1.webp"
-import slide2 from "../assets/img/sliderHome/2.webp"
+import slide2 from "../assets/img/sliderHome/slider-mujer-elegante.webp"
 import slide3 from "../assets/img/sliderHome/3.webp"
 import slide4 from "../assets/img/sliderHome/4.webp"
 import slide5 from "../assets/img/sliderHome/5.webp"
+
+import slide1_movil from "../assets/img/sliderHome/1_movil.webp"
+import slide2_movil from "../assets/img/sliderHome/slider-mujer-elegante_movil.webp"
+import slide3_movil from "../assets/img/sliderHome/3_movil.webp"
+import slide4_movil from "../assets/img/sliderHome/4_movil.webp"
+import slide5_movil from "../assets/img/sliderHome/5_movil.webp"
 import uno from "../assets/img/1number.png"
 import dos from "../assets/img/2number.png"
 
@@ -43,26 +49,7 @@ function Home() {
 									<span className="col-12 p-0 m-0 g-0 titleSlider4Text1 text-white">welcome to a </span>
 									<span className="col-12 p-0 m-0 g-0 titleSlider4Text2 goldTextLight">multimillion-dolar</span>
 									<span className="col-12 p-0 m-0 g-0 titleSlider4Text2">industry</span>
-									<span className="col-12 p-0 m-0 g-0 titleSlider4Text3">With our VIP Per Head service, you don't need <br />to be an expert to open <span className="fw-bolder">the best bookie</span></span>
-								</div>
-							</div>
-						</div>
-						<div className="carousel-item">
-							<img src={slide2} className="d-block" alt="hombre sentado en sillon" />
-							<div className="titleSlider titleSlider2">
-								<div className="row g-0 textEspecial text-center">
-									<span className="col-12 titleSlider2Text1">the best bookie</span>
-									<span className="col-12 titleSlider2Text2">software</span>
-									<span className="col-12 text-white titleSlider2Text3">you can offer your clients!</span>
-								</div>
-							</div>
-						</div>
-						<div className="carousel-item">
-							<img src={slide3} className="d-block w-100" alt="mano con moneda de bitcoin falsa" />
-							<div className="titleSlider titleSlider3">
-								<div className="row g-0 textEspecial text-center">
-									<span className="col-12 titleSlider3Text1 text-white">we accept</span>
-									<span className="col-12 titleSlider3Text2">btc </span>
+									<span className="col-12 p-0 m-0 g-0 titleSlider4Text3">Find great promotions for you <br /> to start your<span className="fw-bolder"> Sports Betting Business</span></span>
 								</div>
 							</div>
 						</div>
@@ -70,11 +57,27 @@ function Home() {
 							<img src={slide4} className="d-block w-100" alt="imagen de persona con dinero" />
 							<div className="titleSlider titleSlider4">
 								<div className="row g-0 textEspecial text-center">
-									<span className="col-12 p-0 m-0 g-0 titleSlider4Text1 text-white">get up to</span>
-									<span className="col-12 p-0 m-0 g-0 titleSlider4Text2 goldTextLight"> <span className="textNormal fw-bold">4</span> weeks of</span>
-									<span className="col-12 p-0 m-0 g-0 titleSlider4Text2">free trial!</span>
-									<span className="col-12 p-0 m-0 g-0 titleSlider4Text3">Concentrate on bulding connections <br /> with yor clients and grow up you <br /> BUSINES</span>
-									<span className="col-12 p-0 m-0 g-0 titleSlider4Text4">leave the rest to us </span>
+									<span className="col-12 p-0 m-0 g-0 titleSlider4Text1 text-white">Open Your Account  </span>
+									<span className="col-12 p-0 m-0 g-0 titleSlider4Text2 goldTextLight"><span className="fw-bold">Today and </span></span>
+									<span className="col-12 p-0 m-0 g-0 titleSlider4Text2">Increase Your Profits!</span>
+								</div>
+							</div>
+						</div>
+						<div className="carousel-item">
+							<img src={slide2} className="d-block" alt="hombre sentado en sillon" />
+							<div className="titleSlider titleSlider2">
+								<div className="row g-0 textEspecial text-center">
+									<span className="col-12 titleSlider2Text2">Your turn-key</span>
+									<span className="col-12 titleSlider2Text1">Casino solution</span>
+								</div>
+							</div>
+						</div>
+						<div className="carousel-item">
+							<img src={slide3} className="d-block w-100" alt="mano con moneda de bitcoin falsa" />
+							<div className="titleSlider titleSlider3">
+								<div className="row g-0 textEspecial text-center">
+									<span className="col-12 titleSlider3Text1 text-white">Change your lifestyle today. </span>
+									<span className="col-12 titleSlider3Text2">Become a VIP Member and enjoy the benefits!</span>
 								</div>
 							</div>
 						</div>
@@ -82,9 +85,10 @@ function Home() {
 							<img src={slide5} className="d-block w-100" alt="grupo jugando a poker" />
 							<div className="titleSlider text-uppercase titleSlider5">
 								<div className="row g-0 text-center">
-									<span className="col-12 titleSlider5Text3 text-white">we are ready to provide <br /> everything you need for the </span>
-									<span className="col-12 titleSlider5Text2 fw-bolder">best</span>
+									<span className="col-12 titleSlider5Text2 fw-bolder p-0">the best</span>
 									<span className="col-12 titleSlider5Text4">sportsbook <br /> software</span>
+									<span className="col-12 titleSlider5Text3 text-white">we are ready to provide <br /> everything you need for</span>
+									<span className="col-12 titleSlider5Text3 text-white"> your sports business</span>
 								</div>
 							</div>
 						</div>
@@ -104,39 +108,43 @@ function Home() {
 				<div id="carouselExampleControlsMovil" className="carousel slide" data-bs-ride="carousel">
 					<div className="carousel-inner">
 						<div className="carousel-item active position-relative">
-							<img src={slide1} className="d-block imgSliderCel w-100" alt="image promo 1" />
+							<img src={slide1_movil} className="d-block imgSliderCel w-100" alt="image promo 1" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
 								<span className="col-12 p-0 m-0 g-0 text-white">welcome to a </span>
 								<span className="col-12 p-0 m-0 g-0 goldTextLight">multimillion-dolar industry</span>
+								<span className="col-12 p-0 m-0 g-0 ">Find great promotions for you <br /> to start your<span className="fw-bolder"> Sports Betting Business</span></span>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide2} className="d-block imgSliderCel w-100" alt="image promo2" />
+							<img src={slide2_movil} className="d-block imgSliderCel w-100" alt="image promo2" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
-								<span className="col-12 p-0 m-0 g-0 text-white">the best bookie software</span>
-								<span className="col-12 p-0 m-0 g-0 goldTextLight">you can offer your clients!</span>
+								<span className="col-12">Your turn-key</span>
+								<span className="col-12">Casino solution</span>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide3} className="d-block imgSliderCel w-100" alt="image promo 3" />
+							<img src={slide3_movil} className="d-block imgSliderCel w-100" alt="image promo 3" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
-								<span className="col-12 p-0 m-0 g-0 text-white">we accept</span>
-								<span className="col-12 p-0 m-0 g-0 goldTextLight">btc</span>
+								<span className="col-12 text-white">Change your lifestyle today. </span>
+								<span className="col-12">Become a VIP Member and enjoy the benefits!</span>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide4} className="d-block imgSliderCel w-100" alt="image promo 4" />
+							<img src={slide4_movil} className="d-block imgSliderCel w-100" alt="image promo 4" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
-								<span className="col-12 p-0 m-0 g-0 text-white">get up to 4 weeks </span>
-								<span className="col-12 p-0 m-0 g-0 goldTextLight">of free trial!</span>
+								<span className="col-12 p-0 m-0 g-0 text-white">Open Your Account  </span>
+								<span className="col-12 p-0 m-0 g-0 goldTextLight"><span className="fw-bold">Today and </span></span>
+								<span className="col-12 p-0 m-0 g-0 ">Increase Your Profits!</span>
 							</div>
 
 						</div>
 						<div className="carousel-item position-relative">
-							<img src={slide5} className="d-block imgSliderCel w-100" alt="image promo 5" />
+							<img src={slide5_movil} className="d-block imgSliderCel w-100" alt="image promo 5" />
 							<div className="row g-0  text-center position-absolute text-white text-uppercase tShadow textSliderMovil5">
-								<span className="col-12 text-white">we are ready to provide everything you need for the </span>
-								<span className="col-12 fw-bolder textEspecial">best sportsbook software</span>
+							<span className="col-12 fw-bolder p-0">the best</span>
+									<span className="col-12">sportsbook <br /> software</span>
+									<span className="col-12 text-white">we are ready to provide <br /> everything you need for</span>
+									<span className="col-12 text-white"> your sports business</span>
 							</div>
 						</div>
 
@@ -247,7 +255,7 @@ function Home() {
 								</div>
 								<div className="col-12 my-3">
 									<p>
-									The best poker games, where you can make deposits and withdrawals without problems.
+										The best poker games, where you can make deposits and withdrawals without problems.
 									</p>
 								</div>
 							</div>
@@ -257,7 +265,7 @@ function Home() {
 								</div>
 								<div className="col-12 my-3">
 									<p>
-									The Prop Builder, which allows users to create their own props for players and teams. 
+										The Prop Builder, which allows users to create their own props for players and teams.
 									</p>
 								</div>
 							</div>
