@@ -7,10 +7,19 @@ import { Helmet } from "react-helmet";
 /*img*/
 import promo1 from "../assets/img/products/epos.jpg";
 import promo2 from "../assets/img/products/sportbooks.jpg";
-import promo3 from "../assets/img/products/skinpremium.jpg";
 import promo4 from "../assets/img/products/casino.jpg";
-import promo5 from "../assets/img/products/skinVip.jpg";
-function Products(){
+import api from "../assets/img/products/api.JPG";
+
+import skinBasic1 from "../assets/img/skin_galery/basic.webp";
+import skinPremium1 from "../assets/img/skin_galery/premium1.webp";
+import skinPremium2 from "../assets/img/skin_galery/premium2.webp";
+import skinStandard1 from "../assets/img/skin_galery/standard1.webp";
+import skinStandard2 from "../assets/img/skin_galery/standard2.webp";
+import skinStandard3 from "../assets/img/skin_galery/standard3.webp";
+import skinStandard4 from "../assets/img/skin_galery/standard4.webp";
+import { Link } from "react-router-dom";
+
+function Products() {
     return (
         <div className="container-fluid p-0">
             <Helmet>
@@ -21,7 +30,7 @@ function Products(){
             <MenuDesplegable />
             <div className="sliderProducts">
                 <div className="titleSlider titleProducts textEspecial">
-                Everything you need to run a bookie business is right here
+                    Everything you need to run a bookie business is right here
                 </div>
                 <MenuHover />
             </div>
@@ -46,7 +55,7 @@ function Products(){
                                 EPOS stands for Electronic Point Of Sale. This is an essential technology designed for businesses that manage customers virtually and in person. This combination of software and hardware will ensure you can safely administrate your busines
                             </div>
                         </div>
-                        <div className="col-12 col-xl-8 p-3 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-xl-4 m-xl-auto ">
                             <img src={promo1} className="img-fluid maxH" alt="promo"></img>
                         </div>
                     </div>
@@ -60,12 +69,29 @@ function Products(){
                                 Our developers have expertly created a sportsbook software ready to be installed on your website and entertain your visitors. You will never be short of sharp lines and betting options.
                             </div>
                         </div>
-                        <div className="col-12 col-xl-8 p-3 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-xl-4 m-xl-auto ">
                             <img src={promo2} className="img-fluid maxH" alt="promo"></img>
                         </div>
                     </div>
+                    <div id="API" name="API"></div>
+                    <div className="row g-0 purple" data-aos="fade-right" data-aos-duration="2000">
+                        <div className="col-12 col-xl-4 p-2">
+                            <div className="col-12 goldText fs-1">
+                                SPORTS API
+                            </div>
+                            <div className="col-12">
+                            Currently VIPPERHEAD uses in its premiun and standard skin the information provided by sportstats365 through its powerful sports API.
+                            </div>
+                            <div className="col-12 text-center">
+                                <Link className="btn bgGold" to={{ pathname: "https://sportsstats365.com/" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">Sports Stats 365</Link>
+                            </div>
+                        </div>
+                        <div className="col-12 col-xl-4 m-xl-auto ">
+                            <img src={api} className="img-fluid maxH" alt="promo"></img>
+                        </div>
+                    </div>
                     <div id="SKINSPREMIUM" name="SKINSPREMIUM"></div>
-                    <div className="row g-0 purple" data-aos="fade-left" data-aos-duration="2000" >
+                    <div className="row g-0" data-aos="fade-left" data-aos-duration="2000" >
                         <div className="col-12 col-xl-4 p-5">
                             <div className="col-12 goldText fs-1">
                                 SKINS PREMIUM
@@ -74,22 +100,91 @@ function Products(){
                                 The best designer has created premium skins. We have a wide variety for you to decide which one suits your brand best.
                             </div>
                         </div>
-                        <div className="col-12 col-xl-8 p-3 d-flex justify-content-center align-items-center">
-                            <img src={promo3} className="img-fluid maxH" alt="promo"></img>
+                        <div className="col-12 col-xl-4 m-xl-auto ">
+                            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={skinPremium1} className="img_product" alt="skin basic" />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={skinPremium2} className="img_product" alt="skin basic" />
+                                    </div>
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="SKINStandart" name="SKINStandart"></div>
+                    <div className="row g-0 purple" data-aos="fade-right" data-aos-duration="2000" >
+                        <div className="col-12 col-xl-4 p-5">
+                            <div className="col-12 goldText fs-1">
+                                STANDARD SKIN
+                            </div>
+                            <div className="col-12">
+                                Vip Per Head Basic Skins
+                            </div>
+                        </div>
+                        <div className="col-12 col-xl-4 m-xl-auto ">
+                            <div id="standard" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={skinStandard1} className="img_product" alt="skin basic" />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={skinStandard2} className="img_product" alt="skin basic" />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={skinStandard3} className="img_product" alt="skin basic" />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={skinStandard4} className="img_product" alt="skin basic" />
+                                    </div>
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#standard" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#standard" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div id="SKINSVIP" name="SKINSVIP"></div>
                     <div className="row g-0" data-aos="fade-left" data-aos-duration="2000" >
                         <div className="col-12 col-xl-4 p-5">
                             <div className="col-12 goldText fs-1">
-                                SKINS
+                                BASIC SKIN
                             </div>
                             <div className="col-12">
-                                Vip Per Head skins gallery
+                                Vip Per Head Basic Skins
                             </div>
                         </div>
-                        <div className="col-12 col-xl-8 p-3 d-flex justify-content-center align-items-center">
-                            <img src={promo5} className="img-fluid maxH" alt="promo"></img>
+                        <div className="col-12 col-xl-4 m-xl-auto overflow-hidden">
+                            <img src={skinBasic1} className="img-fluid maxH" alt="skin basic" />
+                            {/* <div id="basic" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={skinBasic1} className="img_product" alt="skin basic" />
+                                    </div>
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#basic" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#basic" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                            </div> */}
                         </div>
                     </div>
                     <div id="CASINOWEBSITES" name="CASINOWEBSITES"></div>
@@ -103,7 +198,7 @@ function Products(){
                                 Your customers will have loads of fun playing on these fantastic casinos.
                             </div>
                         </div>
-                        <div className="col-12 col-xl-8 p-3 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-xl-4 m-xl-auto ">
                             <img src={promo4} className="img-fluid maxH" alt="promo"></img>
                         </div>
                     </div>

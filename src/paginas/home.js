@@ -502,7 +502,7 @@ function Home() {
 				</div>
 				<div className="row g-0">
 					{store.post.map((item, index) => {
-						if (index < 10 || item.title.rendered == "The Best Bookie Software" || item.title.rendered == "Price Per Head Software to Keep Players Coming Back" || item.title.rendered == "Bookie Software for Football Fans" || item.title.rendered == "Be an Unstoppable Pay Per Head Bookie" || item.title.rendered == "How To Find Pay Per Head Bookie Software" || item.title.rendered == "How To Identify The Best Pay Per Head Software" || item.title.rendered == "Attract More Bettors With Pay Per Head Software Features" || item.title.rendered == "Sports Bookie Software Free Trial Demo" || item.title.rendered == "A Pay Per Head Provider Can Save Your Business" || item.title.rendered == "Top-Of-The-Line Sportsbook Software") {
+						if (index < 10 || item.title.rendered == "Win More Clients with Bookie Software" || item.title.rendered == "Stay ahead of the curve with Pay Per Head Software" || item.title.rendered == "The skills you need to run a betting business" || item.title.rendered == "Pay Per Head Services For Independent Bookies" || item.title.rendered == "Why is running a small gambling business a good idea?" || item.title.rendered == "How To Identify The Best Pay Per Head Software" || item.title.rendered == "Attract More Bettors With Pay Per Head Software Features" || item.title.rendered == "Becoming a Pay Per Head Agent" || item.title.rendered == "A Pay Per Head Provider Can Save Your Business" || item.title.rendered == "Top-Of-The-Line Sportsbook Software") {
 							return (
 								<div className="col-12 col-md-6 col-lg-4 p-0" key={index}>
 									<Post

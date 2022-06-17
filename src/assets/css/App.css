@@ -221,6 +221,16 @@ a:hover {
   height: 70vh;
   width: 100%;
 }
+#productsTop .carousel-item img{
+    /*se modifica bootstrap*/
+    width: 600px;
+    height: auto;
+}
+#productsTop img{
+  /*se modifica bootstrap*/
+  width: 600px;
+  height: auto;
+}
 
 .imgSliderCel {
   height: 38vh !important;

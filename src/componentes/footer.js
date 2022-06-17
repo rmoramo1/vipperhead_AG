@@ -217,7 +217,16 @@ export const Footer = () => {
                                             <HashLink smooth className="goldText" to="/products#SPORTSBOOK">Sportsbook</HashLink>
                                         </li>
                                         <li>
+                                            <HashLink smooth className="goldText" to="/products#API">Sports API</HashLink>
+                                        </li>
+                                        <li>
                                             <HashLink smooth className="goldText" to="/products#SKINSPREMIUM">Skins Premium</HashLink>
+                                        </li>
+                                        <li>
+                                            <HashLink smooth className="goldText" to="/products#SKINStandart">Standartd Skins</HashLink>
+                                        </li>
+                                        <li>
+                                            <HashLink smooth className="goldText" to="/products#SKINSVIP    ">Basic Skins</HashLink>
                                         </li>
                                         <li>
                                             <HashLink smooth className="goldText" to="/products#CASINOWEBSITES">Casino Websites</HashLink>
