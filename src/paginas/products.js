@@ -17,14 +17,14 @@ import skinStandard1 from "../assets/img/skin_galery/standard1.webp";
 import skinStandard2 from "../assets/img/skin_galery/standard2.webp";
 import skinStandard3 from "../assets/img/skin_galery/standard3.webp";
 import skinStandard4 from "../assets/img/skin_galery/standard4.webp";
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 function Products() {
     return (
         <div className="container-fluid p-0">
             <Helmet>
                 <title>Sports betting, Casino and Sportsbook software</title>
-                <link rel="canonical" href="https://www.vipperhead.ag/products" />
+                <HashLink rel="canonical" href="https://www.vipperhead.ag/products" />
                 <meta name="description" content="Our developers have expertly created a sports betting, casino and sportsbook software ready to be installed on your website and entertain your visitors."></meta>
             </Helmet>
             <MenuDesplegable />
@@ -61,12 +61,16 @@ function Products() {
                     </div>
                     <div id="SPORTSBOOK" name="SPORTSBOOK"></div>
                     <div className="row g-0" data-aos="fade-right" data-aos-duration="2000">
-                        <div className="col-12 col-xl-4 p-5">
-                            <div className="col-12 goldText fs-1">
+                        <div className="col-12 col-xl-4 py-2 px-5">
+                            <div className="col-12 goldText fs-2">
                                 SPORTSBOOK SOFTWARE
                             </div>
                             <div className="col-12">
-                                Our developers have expertly created a sportsbook software ready to be installed on your website and entertain your visitors. You will never be short of sharp lines and betting options.
+                                Our developers have expertly created a sportsbook software ready to be installed on your website and entertain your visitors. You will never be short of sharp lines and betting options.<br />
+                                Check out our promotions and start building your own business today!
+                            </div>
+                            <div className="col-12 mt-3 text-center">
+                                <HashLink className="btn bgGold" to="/promotions#top_promo" rel="noopener noreferrer" aria-label="link to facebook">Promotions</HashLink>
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto ">
@@ -75,15 +79,15 @@ function Products() {
                     </div>
                     <div id="API" name="API"></div>
                     <div className="row g-0 purple" data-aos="fade-right" data-aos-duration="2000">
-                        <div className="col-12 col-xl-4 p-2">
+                        <div className="col-12 col-xl-4 p-5">
                             <div className="col-12 goldText fs-1">
                                 SPORTS API
                             </div>
                             <div className="col-12">
-                            Currently VIPPERHEAD uses in its premiun and standard skin the information provided by sportstats365 through its powerful sports API.
+                                Currently VIPPERHEAD uses in its premiun and standard skin the information provided by sportstats365 through its powerful sports API.
                             </div>
-                            <div className="col-12 text-center">
-                                <Link className="btn bgGold" to={{ pathname: "https://sportsstats365.com/" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">Sports Stats 365</Link>
+                            <div className="col-12 mt-5 text-center">
+                                <HashLink smooth className="btn bgGold" to={{ pathname: "https://sportsstats365.com/" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">Sports Stats 365</HashLink>
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto ">
@@ -92,12 +96,15 @@ function Products() {
                     </div>
                     <div id="SKINSPREMIUM" name="SKINSPREMIUM"></div>
                     <div className="row g-0" data-aos="fade-left" data-aos-duration="2000" >
-                        <div className="col-12 col-xl-4 p-5">
-                            <div className="col-12 goldText fs-1">
+                        <div className="col-12 col-xl-4 py-2 px-5">
+                            <div className="col-12 goldText fs-2">
                                 SKINS PREMIUM
                             </div>
                             <div className="col-12">
-                                The best designer has created premium skins. We have a wide variety for you to decide which one suits your brand best.
+                                The best designer has created premium skins. We have a wide variety for you to decide which one suits your brand best.<br/><br/>
+                                With only a few changes to your Website's code, you can request visual elements for a particular skin.<br/><br/>
+                                You can choose between our basic and standard skins 
+                                and you will be sure that your site will look amazing.
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto ">

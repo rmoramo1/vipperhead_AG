@@ -177,10 +177,10 @@ export const Footer = () => {
     const quickSen = (e) => {
         e.preventDefault();
         send(
-            'service_i4kzemi',
-            'template_m3kqk9i',
+            'service_c5ege19',
+            'template_ufjde3w',
             toSend,
-            'user_OWnO0aLDdsjYtDti2MKVX'
+            'user_ueDJqGkpi3yp8nodYgnsk'
         )
             .then((response) => {
                 alert("The form was sent correctly");

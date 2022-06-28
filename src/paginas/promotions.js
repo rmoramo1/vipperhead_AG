@@ -19,7 +19,7 @@ function Promos() {
 		AOS.refresh();
 	}, []);
 	return (
-		<div className="container-fluid p-0">
+		<div className="container-fluid p-0" id="top_promo">
 			<Helmet>
 				<title>Pay per Head Bonuses and Promotions at VIP Per Head</title>
 				<link rel="canonical" href="https://www.vipperhead.ag/promotions" />

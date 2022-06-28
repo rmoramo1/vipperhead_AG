@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { send } from 'emailjs-com';
 import { HashLink } from 'react-router-hash-link';
+import { Tooltip } from '../../node_modules/bootstrap/dist/js/bootstrap.esm'
 
 
 export const JoinUsLittle = () => {
@@ -10,7 +11,7 @@ export const JoinUsLittle = () => {
         email: '',
         country: '',
         phone: '',
-        areaCode:'',
+        areaCode: '',
         password: '',
         promotion: '',
         players: '',
@@ -24,7 +25,7 @@ export const JoinUsLittle = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         send(
-            'service_5ihc1yh',
+            'service_c5ege19',
             'template_ufjde3w',
             toSend,
             'user_ueDJqGkpi3yp8nodYgnsk'
@@ -80,6 +81,15 @@ export const JoinUsLittle = () => {
         const value = target.type === 'checkbox' ? target.checked : target.value;
         toSend.PropBuilder = value;
     }
+    const tooltipRef = useRef();
+    useEffect(() => {
+        var tooltip = new Tooltip(tooltipRef.current, {
+            title: "This is the password you will use once your agency is set up and running. To log in using your password, please contact Customer Service.",
+            placement: 'right',
+            trigger: 'hover'
+        })
+    })
+
     return (
         <div className="purple">
             <form onSubmit={onSubmit}>
@@ -129,9 +139,9 @@ export const JoinUsLittle = () => {
                                 <div className="row g-0">
                                     <div className="col-12 col-xl-4">
                                         <div className="row g-0 p-2">
-                                        <input className="bg-dark inputTextGold text-white col-3 my-3" name="areaCode" id="areaCode" type="number" placeholder="AREA" aria-label="areaCode" value={toSend.areaCode} onChange={handleChange} />
-                                        <input className="bg-dark inputTextGold text-white col-9 my-3" name="phone" id="phone" type="number" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} />
-                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="password" id="password" type="password" placeholder="PASSWORD" aria-label="password" value={toSend.password} onChange={changePass} />
+                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="phone" id="phone" type="phone" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} />
+                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="password" id="password" type="password" placeholder="PASSWORD" aria-label="password" value={toSend.password} onChange={changePass} ref={tooltipRef} />
+
                                             <input className="bg-dark inputTextGold text-white col-12 my-3" name="confirmPassword" id="confirmPassword" type="password" placeholder="CONFIRM PASSWORD" aria-label="confirmPassword" value={toSend.confirmPassword} onChange={changePass} />
                                             <span className="text-white text-uppercase" id="messagePass1">{message}</span>
                                         </div>
@@ -176,6 +186,7 @@ export const JoinUsLittle = () => {
                                                                     Live Casino
                                                                 </label>
                                                             </div>
+
                                                         </div>
                                                         <div className="col-6">
                                                             <div className="form-check py-2">
@@ -190,6 +201,9 @@ export const JoinUsLittle = () => {
                                                                     Prop Builder
                                                                 </label>
                                                             </div>
+                                                        </div>
+                                                        <div className="col-12 mt-5">
+                                                            Fill out this form in order to be contacted by one of our representatives. Please be sure to use the correct information, as our agents will use it to create your website and be able to let you know once its ready.
                                                         </div>
                                                     </div>
                                                 </div>

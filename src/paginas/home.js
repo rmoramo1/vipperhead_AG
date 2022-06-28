@@ -196,7 +196,7 @@ function Home() {
 						</div>
 					</div>
 					<div className="container text-center text-white py-5">
-						<div className="col-12 tShadow fs-4">WHAT DO WE OFFER</div>
+						<div className="col-12 tShadow display-4">WHAT DO WE OFFER</div>
 						<div className="row g-0 my-5">
 							<div className="col-12 col-md-6 col-xl-3 py-md-3">
 								<div className="col-12 bgSportHome">
