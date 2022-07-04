@@ -173,7 +173,7 @@ function SoftwareFeatures() {
                                             <li>Accurate Injury Reports</li>
                                             <li>Agent Lines Management</li>
                                             <li>Agent profile</li>
-                                            <li>Customizable Subagent Report</li>
+                                            <li>Customizable Sub-agent Report</li>
                                             <li>Email Notification System</li>
                                             <li>Instant Activity Report</li>
                                             <li>Bilingual Staff Eng/spa</li>

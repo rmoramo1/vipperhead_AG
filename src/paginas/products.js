@@ -52,7 +52,7 @@ function Products() {
                                 EPOS
                             </div>
                             <div className="col-12">
-                                EPOS stands for Electronic Point Of Sale. This is an essential technology designed for businesses that manage customers virtually and in person. This combination of software and hardware will ensure you can safely administrate your busines
+                                EPOS stands for Electronic Point Of Sale. This is an essential technology designed for businesses that manage customers virtually and in person. This combination of software and hardware will ensure you can safely administrate your business.
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto ">
@@ -84,7 +84,7 @@ function Products() {
                                 SPORTS API
                             </div>
                             <div className="col-12">
-                                Currently VIPPERHEAD uses in its premiun and standard skin the information provided by sportstats365 through its powerful sports API.
+                                Currently, VIPPERHEAD uses in its premium and standard skin the information provided by sportstats365 through its powerful sports API.
                             </div>
                             <div className="col-12 mt-5 text-center">
                                 <HashLink smooth className="btn bgGold" to={{ pathname: "https://sportsstats365.com/" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">Sports Stats 365</HashLink>
@@ -103,8 +103,7 @@ function Products() {
                             <div className="col-12">
                                 The best designer has created premium skins. We have a wide variety for you to decide which one suits your brand best.<br/><br/>
                                 With only a few changes to your Website's code, you can request visual elements for a particular skin.<br/><br/>
-                                You can choose between our basic and standard skins 
-                                and you will be sure that your site will look amazing.
+                                You can choose between our basic and standard skins, and you will be sure that your site will look amazing.
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto ">
@@ -135,7 +134,7 @@ function Products() {
                                 STANDARD SKIN
                             </div>
                             <div className="col-12">
-                                Vip Per Head Basic Skins
+                                VIP Per Head Basic Skins
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto ">
@@ -172,7 +171,7 @@ function Products() {
                                 BASIC SKIN
                             </div>
                             <div className="col-12">
-                                Vip Per Head Basic Skins
+                                VIP Per Head Basic Skins
                             </div>
                         </div>
                         <div className="col-12 col-xl-4 m-xl-auto overflow-hidden">

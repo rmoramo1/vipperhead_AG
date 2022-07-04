@@ -165,7 +165,7 @@ function Home() {
 			<div className="col-12">
 				<div className="row g-0 bgBlack g-0" >
 					<div className="col-12 col-lg-5 p-5 text-white" data-aos="fade-right" data-aos-duration="2000">
-						<div className="col-12 fs-2">YOUR BUSINNESS IS</div>
+						<div className="col-12 fs-2">YOUR BUSINESS IS</div>
 						<div className="col-12 fs-1 goldTitle">OUR BUSINESS!</div>
 						<div className="col-12 pt-5">
 							<p className="lh-lg">
@@ -306,10 +306,10 @@ function Home() {
 									We have hired professional bookies to tailor VIP Per Head as a profitable and safe betting business.
 								</p>
 								<p>
-									Vip Per Head tools and services allow bookies to create a business that operates 24 hours a day, seven days a week.
+									VIP Per Head tools and services allow bookies to create a business that operates 24 hours a day, seven days a week.
 								</p>
 								<p>
-									The bookie will be able to delegate a large part of the operational task to the Vip Per Head team, which means that your business will continue to function even while you are asleep. Best of all, it will continue to generate income.
+									The bookie will be able to delegate a large part of the operational task to the VIP Per Head team, which means that your business will continue to function even while you are asleep. Best of all, it will continue to generate income.
 								</p>
 							</div>
 
@@ -397,9 +397,6 @@ function Home() {
 												Racebook.
 											</li>
 											<li>
-												Online Reports.
-											</li>
-											<li>
 												Prop Builder.
 											</li>
 										</ul>
@@ -470,7 +467,7 @@ function Home() {
 						</div>
 						<div className="col-12 col-lg-6 text-white">
 							<div className="col-12 goldTitle fs-3" data-aos="fade-left" data-aos-duration="2000">YOU ARE READY!</div>
-							<div className="col-12 fs-4" data-aos="fade-left" data-aos-duration="2000">START RUNNING YOUR WINNING BRAND</div>
+							<div className="col-12 fs-4" data-aos="fade-left" data-aos-duration="2000">START RUNNING YOUR WINNING BRAND.</div>
 							<div className="row g-0">
 								<div className="col-6">
 									<div className="col-12" data-aos="zoom-in" data-aos-duration="2000">
@@ -488,7 +485,7 @@ function Home() {
 										CONTACT
 									</div>
 									<div className="col-12 text-white fs-5" data-aos="fade-left" data-aos-duration="2000">
-										One of our representatives will contact you to step your account.
+										One of our representatives will contact you to set your account.
 									</div>
 								</div>
 							</div>

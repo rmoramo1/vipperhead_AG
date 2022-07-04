@@ -17,7 +17,7 @@ function About (){
 			<Helmet>
 				<title>About VIP Per Head - Offshore Pay per Head Services and Software for Bookies</title>
 				<link rel="canonical" href="https://www.vipperhead.ag/about-us" />
-				<meta name="description" content="Vip Per Head is an offshore price per head company located in Costa Rica. Our products and excellent customer service make us one of the best pay per head service."></meta>
+				<meta name="description" content="VIP Per Head is an offshore price per head company located in Costa Rica. Our products and excellent customer service make us one of the best pay per head service."></meta>
 			</Helmet>
 			<MenuDesplegable />
 			<div className="sliderAbout">
@@ -34,10 +34,10 @@ function About (){
 				</div>
 				<div className="container text-center text-white fs-4" data-aos="flip-left" data-aos-duration="2000">
 					<p>
-						Vip Per Head is an offshore company located in Costa Rica. Our products and excellent customer service make us one of the most prestigious per head in the industry. Our vision is to be able to offer our clients a premium service at a very affordable cost.
+						VIP Per Head is an offshore company located in Costa Rica. Our products and excellent customer service make us one of the most prestigious per head in the industry. Our vision is to be able to offer our clients a premium service at a very affordable cost.
 					</p>
 					<p>
-						In orther to make this vision real, we develop an infrastructure with the best software and hardware, as well as the best and most trained customer service staff.
+						In other to make this vision real, we develop an infrastructure with the best software and hardware, as well as the best and most trained customer service staff.
 					</p>
 				</div>
 				<div className="container">

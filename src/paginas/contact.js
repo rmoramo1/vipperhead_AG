@@ -183,13 +183,13 @@ function Contact(){
 											<div className="form-check py-2">
 												<input className="form-check-input" type="radio" name="promotions" id="promotions4" value="4 Free Weeks: Management desition" />
 												<label className="form-check-label" htmlFor="promotions4">
-													4 Free Weeks: Management desition
+													4 Free Weeks: Management decision
 												</label>
 											</div>
 											<div className="form-check py-2">
 												<input className="form-check-input" type="radio" name="promotions" id="promotions5" value="50% cash deposit: any exept BTC" />
 												<label className="form-check-label" htmlFor="promotions5">
-													50% cash deposit: any exept BTC
+													50% cash deposit: any except BTC
 												</label>
 											</div>
 											<div className="form-check py-2">

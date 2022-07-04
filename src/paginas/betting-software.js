@@ -40,7 +40,7 @@ function BettingSoftware(){
                         <div className="col-12 col-xl-6" data-aos="fade-right" data-aos-duration="2000">
                             <div className="col-12 purple p-3 py-5 minH fs-5 text-white">
                                 <p>
-                                    VIP Per Head works with the best software developers on the market to create a robust, agile, and dynamic platform that will allow the bookie to run their betting business from anywhere in the world at any time of the day.
+                                    VIP Per Head works with the best software developers on the market to create a robust, agile, and dynamic platform that will allows the bookie to run their betting business from anywhere in the world at any time of the day.
                                 </p>
                                 <p>
                                     This software has the highest security and privacy standards, so the bookie can rest assured that third parties can’t access his business’s sensitive information and his clients.
@@ -152,7 +152,7 @@ function BettingSoftware(){
                                     </div>
                                     <div className="col-12 goldText text-uppercase display-2 fw-bold">betting</div>
                                     <div className="col-12 py-3 lh-lg fs-5 text-white">
-                                        Bookies that use VIP Per Head services can offer their bettors a wide range of betting options, including traditional but popular leagues such as the NFL, MLB, NBA,NHL and much more! The players will also access international betting options such as tennis, soccer, and even the Olympic games. VIP Per Head goes one step further and includes other types of betting options such as politics and entertainment.
+                                        Bookies that use VIP Per Head services can offer their bettors a wide range of betting options, including traditional but popular leagues such as the NFL, MLB, NBA,NHL and much more! The players will also access international betting options such as tennis, soccer, and even the Olympic Games. VIP Per Head goes one step further and includes other types of betting options such as politics and entertainment.
                                     </div>
                                     <div className="col-12 py-3 lh-lg fs-5 goldText">
                                         With a catalog of betting options as complete as this one, bookies can serve all types of customers, ensuring a more profitable betting business.

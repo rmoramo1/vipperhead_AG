@@ -73,7 +73,7 @@ function Glossary(){
             <h3 className="goldTitle">Parlay</h3>
             <p className="text-white">A kind of bet where different choices are chosen. Every one of those choices should win for the parlay to win. The payout is greater in a parlay, despite the fact that the danger is more prominent also</p>
             <h3 className="goldTitle">Pay Per Head/Price Per Head</h3>
-            <p className="text-white">Is an onshore bookmaker providing their sports betting services to a specific betting cliental with the help of a post-up offshore online.</p>
+            <p className="text-white">Is an onshore bookmaker providing their sports betting services to a specific betting client with the help of a post-up offshore online.</p>
             <h3 className="goldTitle">Pick’em</h3>
             <p className="text-white">In a game where the point spread represents equality, it makes no difference whether one side is favorite or underdog.</p>
             <h3 className="goldTitle">Point Spread</h3>
@@ -111,7 +111,7 @@ function Glossary(){
             <h3 className="goldTitle">Vigorish</h3>
             <p className="text-white">This is an equivalent word for juice, which is the commission the sportsbook takes.</p>
             <h3 className="goldTitle">Wiseguy</h3>
-            <p className="text-white">One more term to depict a "sharp" or "savvy" bettor. In many cases, this is an expert who is very much educated and learne.</p>
+            <p className="text-white">One more term to depict a "sharp" or "savvy" bettor. In many cases, this is an expert who is very much educated and learned.</p>
         </div>
     )
 };

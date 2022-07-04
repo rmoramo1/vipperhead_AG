@@ -223,10 +223,10 @@ export const Footer = () => {
                                             <HashLink smooth className="goldText" to="/products#SKINSPREMIUM">Skins Premium</HashLink>
                                         </li>
                                         <li>
-                                            <HashLink smooth className="goldText" to="/products#SKINStandart">Standartd Skins</HashLink>
+                                            <HashLink smooth className="goldText" to="/products#SKINStandart">Standard Skins</HashLink>
                                         </li>
                                         <li>
-                                            <HashLink smooth className="goldText" to="/products#SKINSVIP    ">Basic Skins</HashLink>
+                                            <HashLink smooth className="goldText" to="/products#SKINSVIP">Basic Skins</HashLink>
                                         </li>
                                         <li>
                                             <HashLink smooth className="goldText" to="/products#CASINOWEBSITES">Casino Websites</HashLink>
@@ -249,7 +249,7 @@ export const Footer = () => {
                                             <HashLink smooth className="goldText" to="/betting-software#bettingSoftware" onClick={movileHorses}>Racebook</HashLink>
                                         </li>
                                         <li>
-                                            <HashLink smooth className="goldText" to="/betting-software#bettingSoftware" onClick={tabonlineCasino}>OnLine Casino</HashLink>
+                                            <HashLink smooth className="goldText" to="/betting-software#bettingSoftware" onClick={tabonlineCasino}>Online Casino</HashLink>
                                         </li>
                                         <li>
                                             <HashLink smooth className="goldText" to="/betting-software#bettingSoftware" onClick={LiveCasino}>Live Casino</HashLink>
@@ -260,7 +260,7 @@ export const Footer = () => {
                                     <HashLink smooth className="goldText fw-bolder" to="/promotions#promosLink">PROMOS</HashLink>
                                     <ul className="list-unstyled">
                                         <li>
-                                            <HashLink smooth className="goldText" to="/promotions#promoFreWeb">Free WEB Site Management</HashLink>
+                                            <HashLink smooth className="goldText" to="/promotions#promoFreWeb">Free Website Management</HashLink>
                                         </li>
                                         <li>
                                             <HashLink smooth className="goldText" to="/promotions#weeksFree">2 Free Weeks</HashLink>
