@@ -25,7 +25,7 @@ function BettingSoftware(){
             <MenuDesplegable />
             <div className="sliderBettingSoftware">
                 <div className="titleSliderBene col-12 text-center textEspecial text-uppercase">
-                     BOOKIE SOFTWARE
+                DISCOVER THE GREAT FEATURES OUR SYSTEM HAS TO OFFER.
                 </div>
                 <MenuHover />
             </div>

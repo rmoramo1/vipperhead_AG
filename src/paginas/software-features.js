@@ -40,7 +40,7 @@ function SoftwareFeatures() {
             <MenuDesplegable />
             <div className="sliderSoftwareFeatures">
                 <div className="titleSliderBene goldText col-12 text-center textEspecial">
-                    Software Features
+                COME AND EXPERIENCE THE BEST CONSTRUCTED ELEMENTS FOR YOUR COMPANY.
                 </div>
                 <MenuHover />
             </div>

@@ -22,7 +22,7 @@ function About (){
 			<MenuDesplegable />
 			<div className="sliderAbout">
 				<div className="titleSlider textEspecial">
-					ABOUT US
+				COME AND LET US HELP YOU TAKE YOUR BRAND TO THE NEXT LEVEL!
 				</div>
 				<MenuHover />
 			</div>

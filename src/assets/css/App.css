@@ -327,9 +327,9 @@ a:hover {
 .titleSlider,
 .titleSliderBene {
   position: absolute;
-  bottom: 30%;
-  left: 15%;
-  font-size: 8vh;
+  bottom: 40%;
+  left: 5%;
+  font-size: 7vh;
   color: #fff;
   text-shadow: 0px 0px 5px #000;
 }
