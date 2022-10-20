@@ -7,6 +7,9 @@ import Loader from './componentes/loader';
 import { Navbar } from "./componentes/navbar";
 import { Footer } from "./componentes/footer";
 import { UpBTN } from "./componentes/upBTN";
+import { Whatsapp } from './componentes/whatsapp';
+import { Telegram } from './componentes/telegram';
+import { Signal } from './componentes/signal';
 
 /* pages*/
 const Home = lazy(() => import('./paginas/home'));
@@ -22,6 +25,7 @@ const Sitemap = lazy(() => import('./paginas/siteMap'));
 const Joinus = lazy(() => import('./paginas/joinus'));
 const Glossary = lazy(() => import('./paginas/glossary'));
 const Error = lazy(() => import('./paginas/404'));
+const Form_New_Agent =lazy(()=>import('./paginas/form_new_agent'));
 
 function App() {
 	useEffect(() => {
@@ -73,12 +77,18 @@ function App() {
 						<Route exact path="/siteMap">
 							<Sitemap />
 						</Route>
+						<Route exact path="/Form_New_Agent">
+							<Form_New_Agent />
+						</Route>
 						<Route>
 							<Error />
 						</Route>
 					</Switch>
 					<Footer />
 					<UpBTN />
+					<Signal/>
+					<Telegram/>
+					<Whatsapp/>
 				</Suspense>
 			</BrowserRouter>
 		</div>

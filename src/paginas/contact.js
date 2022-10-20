@@ -5,13 +5,14 @@ import { Helmet } from "react-helmet";
 /*componentes*/
 import { MenuDesplegable } from "../componentes/menuTogle";
 import { MenuHover } from "../componentes/menuHover";
-function Contact(){
+function Contact() {
 	const [toSend, setToSend] = useState({
 		fullname: '',
 		email: '',
 		message: '',
 		country: '',
 		phone: '',
+		areaCode: '',
 		password: '',
 		players: '',
 		SportsCasinoHorses: '',
@@ -93,24 +94,23 @@ function Contact(){
 			<MenuDesplegable />
 			<div className="sliderContact">
 				<div className="titleSliderBene goldTextLight col-12 text-center textEspecial">
-				HOW CAN WE HELP?
+					HOW CAN WE HELP?
 				</div>
 				<MenuHover />
 			</div>
 			<div className="spanGold"></div>
 			<div className="col-12 bgBlack py-5">
 				<div className="row g-0">
-					<div className="col-12 col-xl-8 pb-5" name="contact" id="Contact">
+					<div className="col-12 col-xl-8 p-2 p-lg-5" name="contact" id="Contact">
 						<form onSubmit={contacSend}>
 							<div className="row g-0">
 								<div className="col-12 col-xl-6">
 									<div className="row g-0 p-2 pt-0">
 										<input className="bg-dark col-12 inputTextGold text-white mb-3" name="fullname" id="fullname" type="text" placeholder="FULL NAME*" aria-label="fullname" value={toSend.fullname} onChange={handleChange} required />
 										<input className="bg-dark inputTextGold text-white col-12 my-3" name="country" id="country" type="text" placeholder="COUNTRY" aria-label="country" value={toSend.country} onChange={handleChange} />
-										<input className="bg-dark inputTextGold text-white col-12 my-3" name="agencyName" id="agencyName" type="text" placeholder="AGENCY NAME" aria-label="agencyName" value={toSend.agencyName} onChange={handleChange} />
 									</div>
 									<div className="col-12 text-white">
-										Select
+										Select Software
 									</div>
 									<div className="col-12">
 										<div className="row g-0 text-white" onChange={onChangeValueType}>
@@ -135,102 +135,108 @@ function Contact(){
 														</label>
 													</div>
 												</div>
+											</div>
+											<div className="col-6">
+												<div className="form-check py-2">
+													<input className="form-check-input" type="checkbox" name="DynamicBetting" id="DynamicBetting" value="Dynamic Betting" onChange={handleDynamicBetting} />
+													<label className="form-check-label" htmlFor="DynamicBetting">
+														Dynamic Betting
+													</label>
 												</div>
-												<div className="col-6">
-													<div className="form-check py-2">
-														<input className="form-check-input" type="checkbox" name="DynamicBetting" id="DynamicBetting" value="Dynamic Betting" onChange={handleDynamicBetting} />
-														<label className="form-check-label" htmlFor="DynamicBetting">
-															Dynamic Betting
-														</label>
-													</div>
-													<div className="form-check py-2">
-														<input className="form-check-input" type="checkbox" name="PropBuilder" id="PropBuilder" value="Prop Builder" onChange={handlePropBuilder} />
-														<label className="form-check-label" htmlFor="PropBuilder">
-															Prop Builder
-														</label>
-													</div>
+												<div className="form-check py-2">
+													<input className="form-check-input" type="checkbox" name="PropBuilder" id="PropBuilder" value="Prop Builder" onChange={handlePropBuilder} />
+													<label className="form-check-label" htmlFor="PropBuilder">
+														Prop Builder
+													</label>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div className="col-12 col-xl-6 text-white">
-										<div className="row g-0 p-2 pt-0">
-											<input className="bg-dark inputTextGold text-white col-12 mb-3" name="email" id="email" type="email" placeholder="EMAIL ADDRESS*" aria-label="emailAddress" value={toSend.email} onChange={handleChange} required />
-											<input className="bg-dark inputTextGold text-white col-12 my-3" name="phone" id="phone" type="number" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} />
-											<input className="bg-dark inputTextGold text-white col-12 my-3" name="players" id="players" type="number" placeholder="N° OF PLAYERS" aria-label="players" value={toSend.players} onChange={handleChange} />
-										</div>
-										<div className="col-12">
-											Select the Promotion for you
-										</div>
-										<div className="col-12" onChange={onChangeValue}>
-											<div className="form-check py-2">
-												<input className="form-check-input" type="radio" name="promotions" id="promotions1" value="Free Website" />
-												<label className="form-check-label" htmlFor="promotions1">
-													Free Website
-												</label>
-											</div>
-											<div className="form-check py-2">
-												<input className="form-check-input" type="radio" name="promotions" id="promotions2" value="2 Free weeks: from 1 to 25 players" />
-												<label className="form-check-label" htmlFor="promotions2">
-													2 Free weeks: from 1 to 25 players                                                </label>
-											</div>
-											<div className="form-check py-2">
-												<input className="form-check-input" type="radio" name="promotions" id="promotions3" value="3 Free weeks: from 26 to 75 players" />
-												<label className="form-check-label" htmlFor="promotions3">
-													3 Free weeks: from 26 to 75 players
-												</label>
-											</div>
-											<div className="form-check py-2">
-												<input className="form-check-input" type="radio" name="promotions" id="promotions4" value="4 Free Weeks: Management desition" />
-												<label className="form-check-label" htmlFor="promotions4">
-													4 Free Weeks: Management decision
-												</label>
-											</div>
-											<div className="form-check py-2">
-												<input className="form-check-input" type="radio" name="promotions" id="promotions5" value="50% cash deposit: any exept BTC" />
-												<label className="form-check-label" htmlFor="promotions5">
-													50% cash deposit: any except BTC
-												</label>
-											</div>
-											<div className="form-check py-2">
-												<input className="form-check-input" type="radio" name="promotions" id="promotions6" value="100% BTC deposit: BTC only" />
-												<label className="form-check-label" htmlFor="promotions6">
-													100% BTC deposit: BTC only
-												</label>
-											</div>
-
-										</div>
+								</div>
+								<div className="col-12 col-xl-6 text-white">
+									<div className="row g-0 p-2 pt-0">
+										<input className="bg-dark inputTextGold text-white col-12 mb-3" name="email" id="email" type="email" placeholder="EMAIL ADDRESS*" aria-label="emailAddress" value={toSend.email} onChange={handleChange} required />
+										<input className="bg-dark inputTextGold text-white col-4 my-3" name="areaCode" id="areaCode" type="number" placeholder="AREACODE" aria-label="areaCode" value={toSend.areaCode} onChange={handleChange} />
+										<input className="bg-dark inputTextGold text-white col-8 my-3" name="phone" id="phone" type="number" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} />
 									</div>
 									<div className="col-12">
-										<textarea className="bg-dark inputTextGold col-12 text-white" placeholder="Message" name="message" id="exampleFormControlTextarea1" rows="5" value={toSend.message} onChange={handleChange}></textarea>
+										Select the Promotion for you
 									</div>
-									<div className="col-12 goldText">
-										(*) Requiered Fiels
-									</div>
-									<div className="col-12 text-end py-5">
-										<button className="bgGold btn" type="submit">JOIN TODAY  <i className="bi bi-arrow-right"></i></button>
+									<div className="col-12" onChange={onChangeValue}>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions1" value="Free Website" />
+											<label className="form-check-label" htmlFor="promotions1">
+												Free Website
+											</label>
+										</div>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions7" value="50% Premium WEBSITE" />
+											<label className="form-check-label" htmlFor="promotions7">
+												50% Premium WEBSITE
+											</label>
+										</div>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions2" value="2 Free weeks: from 1 to 25 players" />
+											<label className="form-check-label" htmlFor="promotions2">
+												2 Free weeks: from 1 to 25 players                                                </label>
+										</div>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions3" value="3 Free weeks: from 26 to 75 players" />
+											<label className="form-check-label" htmlFor="promotions3">
+												3 Free weeks: from 26 to 75 players
+											</label>
+										</div>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions4" value="4 Free Weeks: Management desition" />
+											<label className="form-check-label" htmlFor="promotions4">
+												4 Free Weeks: Management decision
+											</label>
+										</div>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions5" value="50% cash deposit: any exept BTC" />
+											<label className="form-check-label" htmlFor="promotions5">
+												50% cash deposit: any except BTC
+											</label>
+										</div>
+										<div className="form-check py-2">
+											<input className="form-check-input" type="radio" name="promotions" id="promotions6" value="100% BTC deposit: BTC only" />
+											<label className="form-check-label" htmlFor="promotions6">
+												100% BTC deposit: BTC only
+											</label>
+										</div>
+
 									</div>
 								</div>
+								<div className="col-12">
+									<textarea className="bg-dark inputTextGold col-12 text-white" placeholder="Message" name="message" id="exampleFormControlTextarea1" rows="5" value={toSend.message} onChange={handleChange}></textarea>
+								</div>
+								<div className="col-12 goldText">
+									(*) Requiered Fiels
+								</div>
+								<div className="col-12 text-end py-5">
+									<button className="bgGold btn" type="submit">JOIN TODAY  <i className="bi bi-arrow-right"></i></button>
+								</div>
+							</div>
 						</form>
 					</div>
-						<div className="col-12 col-xl-4">
-							<div className="bg-dark col-12 p-5 text-center goldText">
-								<div className="col-12 py-3 fs-2  text-white text-uppercase">contact us now</div>
-								<div className="col-12 py-3 fs-4 text-uppercase">customer service and sales</div>
-								<div className="col-12 py-3 fs-4 text-uppercase">
-									<Link className="goldText" href="mailto:cs@vipperhead.ag" target="_blank" rel="noopener noreferrer">cs@vipperhead.ag</Link>
-								</div>
-								<div className="col-12 py-3 fs-4 text-uppercase"><span className="text-white"> Us</span> 1-888-992-3891</div>
-								<div className="col-12 py-3 fs-4 text-uppercase"><span className="text-white"> mx</span> 01-800-099-0754</div>
-								<div className="col-12 py-3 fs-2 text-uppercase"><span className="text-white"> live chat</span></div>
-								<div className="col-12 py-3 fs-2 text-uppercase goldTitle">chat with one of our representatives</div>
+					<div className="col-12 col-xl-4">
+						<div className="bg-dark col-12 p-5 text-center goldText">
+							<div className="col-12 py-3 fs-2  text-white text-uppercase">contact us now</div>
+							<div className="col-12 py-3 fs-4 text-uppercase">customer service and sales</div>
+							<div className="col-12 py-3 fs-4 text-uppercase">
+								<Link className="goldText" href="mailto:cs@vipperhead.ag" target="_blank" rel="noopener noreferrer">cs@vipperhead.ag</Link>
 							</div>
+							<div className="col-12 py-3 fs-4 text-uppercase"><span className="text-white"> Us</span> 1-877-490-7723</div>
+							<div className="col-12 py-3 fs-4 text-uppercase"><span className="text-white"> mx</span> 01-800-099-0451</div>
+							<div className="col-12 py-3 fs-2 text-uppercase"><span className="text-white"> live chat</span></div>
+							<div className="col-12 py-3 fs-2 text-uppercase goldTitle">chat with one of our representatives</div>
 						</div>
 					</div>
 				</div>
-				<div className="spanGold"></div>
-
 			</div>
-			);
+			<div className="spanGold"></div>
+
+		</div>
+	);
 };
 export default Contact;

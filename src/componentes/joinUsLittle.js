@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { send } from 'emailjs-com';
 import { HashLink } from 'react-router-hash-link';
-import { Tooltip } from '../../node_modules/bootstrap/dist/js/bootstrap.esm'
-
 
 export const JoinUsLittle = () => {
 
@@ -12,9 +10,7 @@ export const JoinUsLittle = () => {
         country: '',
         phone: '',
         areaCode: '',
-        password: '',
         promotion: '',
-        players: '',
         SportsCasinoHorses: '',
         LiveBettin: '',
         LiveCasino: '',
@@ -40,15 +36,6 @@ export const JoinUsLittle = () => {
             });
         e.target.reset()
     };
-    const changePass = (e) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
-    };
-    let message = "roy"
-    if (toSend.password !== toSend.confirmPassword) {
-        message = "Passwords are not the same"
-    } else {
-        message = "Passwords are the same";
-    }
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
@@ -81,15 +68,6 @@ export const JoinUsLittle = () => {
         const value = target.type === 'checkbox' ? target.checked : target.value;
         toSend.PropBuilder = value;
     }
-    const tooltipRef = useRef();
-    useEffect(() => {
-        var tooltip = new Tooltip(tooltipRef.current, {
-            title: "This is the password you will use once your agency is set up and running. To log in using your password, please contact Customer Service.",
-            placement: 'right',
-            trigger: 'hover'
-        })
-    })
-
     return (
         <div className="purple">
             <form onSubmit={onSubmit}>
@@ -111,14 +89,11 @@ export const JoinUsLittle = () => {
                         </div>
                         <div className="col-12 col-lg-7">
                             <div className="row g-0 text-white">
-                                <div className="col-6 col-lg-4 p-2 p-xl-3">
+                                <div className="col-6 col-lg-6 p-2 p-xl-3">
                                     <input className="bg-dark col-12 inputTextGold text-white" name="fullname" id="fullname" type="text" placeholder="FULL NAME*" aria-label="fullname" value={toSend.fullname} onChange={handleChange} required />
                                 </div>
-                                <div className="col-6 col-lg-4 p-2 p-xl-3">
-                                    <input className="bg-dark col-12 inputTextGold text-white" name="email" id="email" type="mail" placeholder="EMAIL ADDRESS*" aria-label="email" value={toSend.email} onChange={handleChange} required />
-                                </div>
-                                <div className="col-6 col-lg-4 p-2 p-xl-3">
-                                    <input className="bg-dark col-12 inputTextGold text-white" name="country" id="country" type="text" placeholder="COUNTRY" aria-label="country" value={toSend.country} onChange={handleChange} />
+                                <div className="col-6 col-lg-6 p-2 p-xl-3">
+                                    <input className="bg-dark col-12 inputTextGold text-white" name="email" id="email" type="email" placeholder="EMAIL ADDRESS*" aria-label="email" value={toSend.email} onChange={handleChange} required />
                                 </div>
                             </div>
                         </div>
@@ -136,28 +111,15 @@ export const JoinUsLittle = () => {
                             <div className="col-12 col-xl-2 text-center">
                             </div>
                             <div className="col-12 col-xl-9">
-                                <div className="row g-0">
-                                    <div className="col-12 col-xl-4">
-                                        <div className="row g-0 p-2">
-                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="phone" id="phone" type="phone" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} />
-                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="password" id="password" type="password" placeholder="PASSWORD" aria-label="password" value={toSend.password} onChange={changePass} ref={tooltipRef} />
-
-                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="confirmPassword" id="confirmPassword" type="password" placeholder="CONFIRM PASSWORD" aria-label="confirmPassword" value={toSend.confirmPassword} onChange={changePass} />
-                                            <span className="text-white text-uppercase" id="messagePass1">{message}</span>
-                                        </div>
+                                <div className="row g-0 p-2">
+                                    <div className="col-4 col-lg-2">
+                                        <input className="bg-dark inputTextGold text-white col-12 my-3" name="areaCode" id="areaCode" type="number" placeholder="AREA CODE" aria-label="areaCode" value={toSend.areaCode} onChange={handleChange} required />
                                     </div>
-                                    <div className="col-12 col-xl-4 text-white">
-                                        <div className="row g-0 p-2">
-                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="agencyName" id="agencyName" type="text" placeholder="AGENCY NAME" aria-label="agencyName" value={toSend.agencyName} onChange={handleChange} />
-                                        </div>
+                                    <div className="col-8 col-xl-4 me-lg-3">
+                                        <input className="bg-dark inputTextGold text-white col-12 my-3" name="phone" id="phone" type="phone" placeholder="PHONE" aria-label="phone" value={toSend.phone} onChange={handleChange} required />
                                     </div>
                                     <div className="col-12 col-xl-4">
-                                        <div className="row g-0 p-2">
-                                            <input className="bg-dark inputTextGold text-white col-12 my-3" name="players" id="players" type="number" placeholder="N° OF PLAYERS" aria-label="players" value={toSend.players} onChange={handleChange} />
-                                            <div className="col-12 goldText">
-                                                (*) Requiered Fiels
-                                            </div>
-                                        </div>
+                                        <input className="bg-dark inputTextGold text-white col-12 my-3" name="country" id="country" type="text" placeholder="COUNTRY" aria-label="country" value={toSend.country} onChange={handleChange} required />
                                     </div>
                                     <div className="col-12">
                                         <div className="row">
@@ -220,6 +182,12 @@ export const JoinUsLittle = () => {
                                                         </label>
                                                     </div>
                                                     <div className="form-check py-2">
+                                                        <input className="form-check-input" type="radio" name="promotions" id="promotions7" value="50% Premium WEBSITE" />
+                                                        <label className="form-check-label" htmlFor="promotions7">
+                                                            50% Premium WEBSITE
+                                                        </label>
+                                                    </div>
+                                                    <div className="form-check py-2">
                                                         <input className="form-check-input" type="radio" name="promotions" id="promotions2" value="2 Free weeks: from 1 to 25 players" />
                                                         <label className="form-check-label" htmlFor="promotions2">
                                                             2 Free weeks: from 1 to 25 players                                                </label>
@@ -252,8 +220,11 @@ export const JoinUsLittle = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="col-12 goldText">
+                                        (*) Requiered Fiels
+                                    </div>
                                     <div className="col-12 text-end py-5">
-                                        <button className="bgGold btn" type="submit">JOIN TODAY  <i className="bi bi-arrow-right"></i></button>
+                                        <button className="bgGold btn" type="submit">SEND <i className="bi bi-arrow-right"></i></button>
                                     </div>
                                 </div>
                             </div>

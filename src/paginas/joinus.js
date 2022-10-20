@@ -137,7 +137,7 @@ function Joinus(){
                                 </div>
                                 <div className="col-12 col-xl-4 text-white">
                                     <div className="row g-0 p-2">
-                                        <input className="bg-dark inputTextGold text-white col-12 my-3" name="email" id="emailAddress" type="mail" placeholder="EMAIL ADDRESS*" aria-label="emailAddress" value={toSend.email} onChange={handleChange} required />
+                                        <input className="bg-dark inputTextGold text-white col-12 my-3" name="email" id="emailAddress" type="email" placeholder="EMAIL ADDRESS*" aria-label="emailAddress" value={toSend.email} onChange={handleChange} required />
                                         <input className="bg-dark inputTextGold text-white col-12 my-3" name="agencyName" id="agencyName" type="text" placeholder="AGENCY NAME*" aria-label="agencyName" value={toSend.agencyName} onChange={handleChange} required />
                                         <input className="bg-dark inputTextGold text-white col-12 my-3" name="confirmPassword" id="confirmPassword" type="password" placeholder="CONFIRM PASSWORD*" aria-label="confirmPassword" value={toSend.confirmPassword} onChange={changePass} required />
                                         <span className="text-white text-uppercase" id="messagePass1">{message}</span>

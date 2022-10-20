@@ -21,7 +21,7 @@ export const MenuHover = () => {
 
                         </div>
                         <div className="col-2">
-                            <button className="btn text-white tShadow fs-1" aria-label="button for display menu" type="button" onMouseEnter={hover}>
+                            <button className="btn-menu-hover text-white tShadow fs-3" aria-label="button for display menu" type="button" onMouseEnter={hover}>
                                 <i className="fas fa-bars"></i>
                             </button>
                         </div>

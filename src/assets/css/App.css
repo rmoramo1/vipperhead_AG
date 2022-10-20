@@ -45,6 +45,18 @@ a:hover {
   z-index: 153;
 }
 
+.btn-menu-hover {
+  background-image: url('../img/diamond_menu.png');
+  border: 0;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100px;
+  min-width: 100px;
+
+}
+
 .menuMovil {
   right: 0%;
 }
@@ -57,12 +69,12 @@ a:hover {
   right: 0%;
   padding-top: 12vh;
   text-align: left;
-  background: linear-gradient(to right, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .9) 25%);
+  background: #000;
   z-index: 10;
 }
 
 #linksMenuHover {
-  background: linear-gradient(to right, rgba(0, 0, 0, .02) 0%, rgba(0, 0, 0, .9) 25%);
+  background: #000;
   width: 0%;
   transition: all .3s linear;
 }
@@ -92,6 +104,7 @@ a:hover {
 @font-face {
   font-family: especial;
   src: url("../font/airstrikecond.ttf");
+  font-display: swap;
 }
 
 .textEspecial {
@@ -221,12 +234,14 @@ a:hover {
   height: 70vh;
   width: 100%;
 }
-#productsTop .carousel-item img{
-    /*se modifica bootstrap*/
-    width: 600px;
-    height: auto;
+
+#productsTop .carousel-item img {
+  /*se modifica bootstrap*/
+  width: 600px;
+  height: auto;
 }
-#productsTop img{
+
+#productsTop img {
   /*se modifica bootstrap*/
   width: 600px;
   height: auto;
@@ -261,7 +276,7 @@ a:hover {
 .bgPoker,
 .bgProp_Builder,
 .bgCallCenterHome {
-  background-image: url("../img/servicesHome/Sportbook-software.jpg");
+  background-image: url("../img/servicesHome/Sportbook-software.webp");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -286,27 +301,27 @@ a:hover {
 }
 
 .bgOnLineCasinoHome {
-  background-image: url("../img/servicesHome/online-casino.jpg");
+  background-image: url("../img/servicesHome/online-casino.webp");
 }
 
 .bgLiveBetHome {
-  background-image: url("../img/servicesHome/live-betting.jpg");
+  background-image: url("../img/servicesHome/live-betting.webp");
 }
 
 .bgHorseHome {
-  background-image: url("../img/servicesHome/horses.jpg");
+  background-image: url("../img/servicesHome/horses.webp");
 }
 
 .bgCallCenterHome {
-  background-image: url("../img/servicesHome/call-center.jpg");
+  background-image: url("../img/servicesHome/call-center.webp");
 }
 
 .bgProp_Builder {
-  background-image: url("../img/servicesHome/prop_builder.jpg");
+  background-image: url("../img/servicesHome/prop_builder.webp");
 }
 
 .bgPoker {
-  background-image: url("../img/servicesHome/poker.jpg");
+  background-image: url("../img/servicesHome/poker.webp");
 }
 
 .textOffer {
@@ -353,7 +368,8 @@ a:hover {
 .sliderBlog,
 .sliderContact,
 .sliderError,
-.sliderJoin {
+.sliderJoin,
+.sliderForm {
   width: 100%;
   height: 70vh;
   background-image: url("../img/sliderIndex.jpg");
@@ -432,8 +448,11 @@ a:hover {
   background-image: url("../img/sliderJoinUs.jpg");
 }
 
+.sliderForm {
+  background-image: url("../img/form.jpg");
+}
+
 .titleSlider1 {
-  left: 30%;
   bottom: 20%;
   text-shadow: 1px 1px 0px #000, -1px -1px 0px #000, 3px 3px 9px #000, -3px -3px 9px #000;
 }
@@ -706,12 +725,11 @@ a:hover {
 .btnUP {
   position: fixed;
   bottom: 15vh;
-  right: 3vh;
+  right: 30px;
   box-shadow: 0 0 10px #000;
   color: #52491e;
   width: 50px;
   height: 50px;
-  padding: 5px;
   border-radius: 50px;
 }
 
@@ -729,4 +747,38 @@ a:hover {
   background-size: 25%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/*Whatsapp*/
+.bg_whats {
+  background-color: #128c7e;
+}
+
+.bg_telegram {
+  background-color: #0084c6;
+}
+
+.bg_signal {
+  background-color: #4a7fea;
+}
+
+.whatsapp_module,
+.telegram_module,
+.signal_module {
+  position: fixed;
+  right: 30px;
+  bottom: 24vh;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #000;
+  z-index: 1234;
+}
+
+.telegram_module {
+  bottom: 32vh;
+}
+
+.signal_module {
+  bottom: 40vh;
 }

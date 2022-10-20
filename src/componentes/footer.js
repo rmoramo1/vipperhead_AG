@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 /* img */
-import logo from "../assets/img/logoRounded.png";
+import logo from "../assets/img/logoRounded.webp";
 
 export const Footer = () => {
     const [toSend, setToSend] = useState({
@@ -297,51 +297,14 @@ export const Footer = () => {
                                     <ul className="list-unstyled">
                                         <li>
                                             <div className="col-12 col-lg-6 g-0 p-0">
-                                                <div className="col-12 goldText">1-888-992-389-1</div>
+                                                <div className="col-12 goldText">1-877-490-7723</div>
                                                 <div className="col-12 text-white">Call Us For Free in ENG</div>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="col-12 col-lg-6 g-0 p-0">
-                                                <div className="col-12 goldText">01-800-009-0754</div>
+                                                <div className="col-12 goldText">01-800-099-0451</div>
                                                 <div className="col-12 text-white">Call Us For Free in ESP</div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="col-12 col-lg-6 goldText my-2 text-center">
-                                                <div className="col-12">
-                                                    <div className="row g-0 g-0">
-                                                        <div className="col-12">
-                                                            <div className="row g-0">
-                                                                <div className="col-2 fs-4 text-center">
-                                                                    <Link to={{ pathname: "https://www.facebook.com/Vipperhead-105367985078530" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">
-                                                                        <i className="fab fa-facebook-f"></i>
-                                                                    </Link>
-                                                                </div>
-                                                                <div className="col-2 fs-4 text-center">
-                                                                    <Link to={{ pathname: "https://twitter.com/PerheadVip" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to linkedin">
-                                                                        <i className="fab fa-twitter"></i>
-                                                                    </Link>
-                                                                </div>
-                                                                <div className="col-2 fs-4 text-center">
-                                                                    <Link to={{ pathname: "https://www.youtube.com/channel/UCvi6hyCvaQ7mFNM1ylAilZQ" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to microphone podcast">
-                                                                        <i className="fab fa-youtube"></i>
-                                                                    </Link>
-                                                                </div>
-                                                                <div className="col-2 fs-4 text-center">
-                                                                    <Link to={{ pathname: "https://www.instagram.com/vipperhead.ag/" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
-                                                                        <i className="fab fa-instagram"></i>
-                                                                    </Link>
-                                                                </div>
-                                                                {/* <div className="col-2 fs-4">
-                                                                        <Link to="/" aria-label="link to microphone podcast">
-                                                                            <i className="fas fa-microphone"></i>
-                                                                        </Link>
-                                                                    </div> */}
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </li>
                                     </ul>
@@ -355,7 +318,7 @@ export const Footer = () => {
                             <div className="col-12">
                                 <form onSubmit={quickSen}>
                                     <div className="col-12 my-3">
-                                        <input className="bg-dark inputTextGold text-white col-12" name="email" id="emailQuick" type="mail" placeholder="Your EMAIL Address*" aria-label="emailQuick" value={toSend.email} onChange={handleChange} required />
+                                        <input className="bg-dark inputTextGold text-white col-12" name="email" id="emailQuick" type="email" placeholder="Your EMAIL Address*" aria-label="emailQuick" value={toSend.email} onChange={handleChange} required />
                                     </div>
                                     <div className="col-12">
                                         <textarea className="bg-dark inputTextGold text-white col-12" id="message" placeholder="Message*" name="message" rows="3" aria-label="emailQuick" value={toSend.message} onChange={handleChange} required></textarea>
@@ -371,10 +334,10 @@ export const Footer = () => {
             </div>
             <div className="darkGrey text-center">
                 <div className="row g-0 py-4">
-                    <div className="col-12 col-lg-4 goldText">
+                    <div className="col-lg-4 goldText">
                         Copyright 2022 VIP Per Head
                     </div>
-                    <div className="col-12 col-lg-4">
+                    <div className="col-lg-4">
                         <div className="row g-0 g-0">
                             <div className="col-12 col-lg-3">
                                 <Link className="goldText" to="/glossary">GLOSSARY</Link>
@@ -390,8 +353,53 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-3 text-center">
+                        <div className="row g-0 ">
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "https://www.facebook.com/Vipperhead-105367985078530" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to facebook">
+                                    <i className="fab fa-facebook-f"></i>
+                                </Link>
+                            </div>
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "https://twitter.com/PerheadVip" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to linkedin">
+                                    <i className="fab fa-twitter"></i>
+                                </Link>
+                            </div>
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "https://www.youtube.com/channel/UCvi6hyCvaQ7mFNM1ylAilZQ" }} rel="noopener noreferrer" target={"_blank"} aria-label="link to microphone podcast">
+                                    <i className="fab fa-youtube"></i>
+                                </Link>
+                            </div>
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "https://www.instagram.com/vipperhead.ag/" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
+                                    <i className="fab fa-instagram"></i>
+                                </Link>
+                            </div>
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "https://wa.me/50663689412" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
+                                    <i className="fa-brands fa-whatsapp"></i>
+                                </Link>
+                            </div>
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "https://t.me/Vipperheadcs" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
+                                    <i className="fa-brands fa-telegram"></i>
+                                </Link>
+                            </div>
+                            <div className="col fs-4 text-center">
+                                <Link to={{ pathname: "http://signal.me/#p/+50663689412" }} rel="noopener noreferrer" target={"_blank"} aria-label="instagram">
+                                    <i className="bi bi-signal"></i>
+                                </Link>
+                            </div>
+                            {/* <div className="col-2 fs-4">
+                                                                        <Link to="/" aria-label="link to microphone podcast">
+                                                                            <i className="fas fa-microphone"></i>
+                                                                        </Link>
+                                                                    </div> */}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     )
 }

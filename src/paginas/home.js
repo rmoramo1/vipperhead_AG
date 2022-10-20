@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, lazy } from "react";
 import AOS from "aos";
 import "../../node_modules/aos/dist/aos.css";
 import { Context } from "../store/appContext";
@@ -25,12 +25,14 @@ import slide5_movil from "../assets/img/sliderHome/5_movil.webp"
 import uno from "../assets/img/1number.png"
 import dos from "../assets/img/2number.png"
 
+
 function Home() {
 	const { store, actions } = useContext(Context);
 	useEffect(() => {
 		AOS.init({ duration: 1500 });
 		AOS.refresh();
 	}, []);
+
 	return (
 		<div className="container-fluid p-0 promoPurple" id="homeTop">
 			<Helmet>
@@ -39,11 +41,11 @@ function Home() {
 				<meta name="description" content="VIP Per Head is the best online Pay Per Head bookie software service. Licensed Sportsbook Price Per Head solution. Check now!"></meta>
 			</Helmet>
 			<MenuDesplegable />
-			<div className="d-none d-xl-block">
+			<div className="d-none d-lg-block">
 				<div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
 					<div className="carousel-inner">
 						<div className="carousel-item active">
-							<img src={slide1} className="d-block w-100" alt="imagen de persona con dinero en estadio" />
+							<img loading="lazy"  src={slide1} className="d-block w-100" alt="imagen de persona con dinero en estadio" />
 							<div className="titleSlider titleSlider1">
 								<div className="row g-0 textEspecial text-center">
 									<span className="col-12 p-0 m-0 g-0 titleSlider4Text1 text-white">welcome to a </span>
@@ -54,7 +56,7 @@ function Home() {
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide4} className="d-block w-100" alt="imagen de persona con dinero" />
+							<img loading="lazy" src={slide4} className="d-block w-100" alt="imagen de persona con dinero" />
 							<div className="titleSlider titleSlider4">
 								<div className="row g-0 textEspecial text-center">
 									<span className="col-12 p-0 m-0 g-0 titleSlider4Text1 text-white">Open Your Account  </span>
@@ -64,7 +66,8 @@ function Home() {
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide2} className="d-block" alt="hombre sentado en sillon" />
+		
+							<img loading="lazy" src={slide2} className="d-block" alt="hombre sentado en sillon" />
 							<div className="titleSlider titleSlider2">
 								<div className="row g-0 textEspecial text-center">
 									<span className="col-12 titleSlider2Text2">Your turn-key</span>
@@ -73,7 +76,7 @@ function Home() {
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide3} className="d-block w-100" alt="mano con moneda de bitcoin falsa" />
+							<img loading="lazy" src={slide3} className="d-block w-100" alt="mano con moneda de bitcoin falsa" />
 							<div className="titleSlider titleSlider3">
 								<div className="row g-0 textEspecial text-center">
 									<span className="col-12 titleSlider3Text1 text-white">Change your lifestyle today. </span>
@@ -82,7 +85,7 @@ function Home() {
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide5} className="d-block w-100" alt="grupo jugando a poker" />
+							<img  src={slide5} className="d-block w-100" alt="grupo jugando a poker" />
 							<div className="titleSlider text-uppercase titleSlider5">
 								<div className="row g-0 text-center">
 									<span className="col-12 titleSlider5Text2 fw-bolder p-0">the best</span>
@@ -104,11 +107,11 @@ function Home() {
 					</button>
 				</div>
 			</div>
-			<div className="d-block d-xl-none">
+			<div className="d-block d-lg-none">
 				<div id="carouselExampleControlsMovil" className="carousel slide" data-bs-ride="carousel">
 					<div className="carousel-inner">
 						<div className="carousel-item active position-relative">
-							<img src={slide1_movil} className="d-block imgSliderCel w-100" alt="image promo 1" />
+							<img loading="lazy" src={slide1_movil} className="d-block imgSliderCel w-100" alt="image promo 1" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
 								<span className="col-12 p-0 m-0 g-0 text-white">welcome to a </span>
 								<span className="col-12 p-0 m-0 g-0 goldTextLight">multimillion-dolar industry</span>
@@ -116,21 +119,21 @@ function Home() {
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide2_movil} className="d-block imgSliderCel w-100" alt="image promo2" />
+							<img loading="lazy" src={slide2_movil} className="d-block imgSliderCel w-100" alt="image promo2" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
 								<span className="col-12">Your turn-key</span>
 								<span className="col-12">Casino solution</span>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide3_movil} className="d-block imgSliderCel w-100" alt="image promo 3" />
+							<img  src={slide3_movil} className="d-block imgSliderCel w-100" alt="image promo 3" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
 								<span className="col-12 text-white">Change your lifestyle today. </span>
 								<span className="col-12">Become a VIP Member and enjoy the benefits!</span>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={slide4_movil} className="d-block imgSliderCel w-100" alt="image promo 4" />
+							<img loading="lazy" src={slide4_movil} className="d-block imgSliderCel w-100" alt="image promo 4" />
 							<div className="row g-0 textEspecial text-center position-absolute text-white text-uppercase tShadow textSliderMovil">
 								<span className="col-12 p-0 m-0 g-0 text-white">Open Your Account  </span>
 								<span className="col-12 p-0 m-0 g-0 goldTextLight"><span className="fw-bold">Today and </span></span>
@@ -139,12 +142,12 @@ function Home() {
 
 						</div>
 						<div className="carousel-item position-relative">
-							<img src={slide5_movil} className="d-block imgSliderCel w-100" alt="image promo 5" />
+							<img loading="lazy" src={slide5_movil} className="d-block imgSliderCel w-100" alt="image promo 5" />
 							<div className="row g-0  text-center position-absolute text-white text-uppercase tShadow textSliderMovil5">
-							<span className="col-12 fw-bolder p-0">the best</span>
-									<span className="col-12">sportsbook <br /> software</span>
-									<span className="col-12 text-white">we are ready to provide <br /> everything you need for</span>
-									<span className="col-12 text-white"> your sports business</span>
+								<span className="col-12 fw-bolder p-0">the best</span>
+								<span className="col-12">sportsbook <br /> software</span>
+								<span className="col-12 text-white">we are ready to provide <br /> everything you need for</span>
+								<span className="col-12 text-white"> your sports business</span>
 							</div>
 						</div>
 
@@ -192,7 +195,16 @@ function Home() {
 							</div>
 						</div>
 						<div className="col-lg-6 d-flex align-items-center justify-content-center">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/mNqJJCSl0dQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/mNqJJCSl0dQ&autoplay=1"
+								srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/mNqJJCSl0dQ?autoplay=1><img  src=https://i.ytimg.com/vi/mNqJJCSl0dQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMuhJ1n0cjwf3AMNHPbh_3CYba1w alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+							></iframe>
 						</div>
 					</div>
 					<div className="container text-center text-white py-5">
@@ -471,7 +483,7 @@ function Home() {
 							<div className="row g-0">
 								<div className="col-6">
 									<div className="col-12" data-aos="zoom-in" data-aos-duration="2000">
-										<img src={uno} alt="imagen numero uno"></img>
+										<img  src={uno} alt="imagen numero uno"></img>
 									</div>
 									<div className="col-12 goldText fs-3" data-aos="fade-right" data-aos-duration="2000">
 										FILL THE FORM
@@ -479,7 +491,7 @@ function Home() {
 								</div>
 								<div className="col-6">
 									<div className="col-12" data-aos="zoom-in" data-aos-duration="2000">
-										<img src={dos} alt="imagen numero uno"></img>
+										<img  src={dos} alt="imagen numero uno"></img>
 									</div>
 									<div className="col-12 goldText fs-3" data-aos="fade-left" data-aos-duration="2000">
 										CONTACT
@@ -499,7 +511,7 @@ function Home() {
 				</div>
 				<div className="row g-0">
 					{store.post.map((item, index) => {
-						if (index < 10 || item.title.rendered == "Win More Clients with Bookie Software" || item.title.rendered == "Stay ahead of the curve with Pay Per Head Software" || item.title.rendered == "The skills you need to run a betting business" || item.title.rendered == "Pay Per Head Services For Independent Bookies" || item.title.rendered == "Why is running a small gambling business a good idea?" || item.title.rendered == "How To Identify The Best Pay Per Head Software" || item.title.rendered == "Attract More Bettors With Pay Per Head Software Features" || item.title.rendered == "Becoming a Pay Per Head Agent" || item.title.rendered == "A Pay Per Head Provider Can Save Your Business" || item.title.rendered == "Top-Of-The-Line Sportsbook Software") {
+						if (index < 12 || item.title.rendered == "A Pay Per Head Provider Can Save Your Business" || item.title.rendered == "The Best Bookie Software" || item.title.rendered == "Bookie Software for Football Fans" || item.title.rendered == "Top-Of-The-Line Sportsbook Software" || item.title.rendered == "Be an Unstoppable Pay Per Head Bookie" || item.title.rendered == "Price Per Head Software to Keep Players Coming Back" || item.title.rendered == "Attract More Bettors With Pay Per Head Software Features" || item.title.rendered == "How To Identify The Best Pay Per Head Software" || item.title.rendered == "Sports Bookie Software Free Trial Demo" || item.title.rendered == "How To Find a Pay Per Head Bookie Software" || item.title.rendered == "How much is a betting software?") {
 							return (
 								<div className="col-12 col-md-6 col-lg-4 p-0" key={index}>
 									<Post
